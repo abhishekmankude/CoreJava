@@ -24,7 +24,7 @@ public class upper_inc {
             steps++;
             Arrays.sort(arr);
 
-            if (arr[0] == arr[1] && arr[1] == arr[2]) {
+            if   (arr[0] == arr[1] && arr[1] == arr[2]) {
                 return steps;
             }
 
