@@ -23,7 +23,7 @@ public class Minister {
 
         System.out.println("Minister Name"+this.ministerName);
         System.out.println("Minister State "+this.ministerState);
-        System.out.println("Minister Position "+this.ministerPosition);
+        System.out.println("Minister    Position "+this.ministerPosition);
         System.out.println("Minister Salary "+this.ministerSalary);
         System.out.println("----------------------");
         for(PersonalAssistant ref:pa){
