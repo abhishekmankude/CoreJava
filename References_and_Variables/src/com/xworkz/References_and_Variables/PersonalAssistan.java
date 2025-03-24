@@ -1,7 +1,7 @@
 package com.xworkz.References_and_Variables;
 
 
-public class PersonalAssistant {
+public class PersonalAssistan {
     String paName;
     int paAge;
     int paSalary;
@@ -9,7 +9,7 @@ public class PersonalAssistant {
     Security security;
 
 
-    public PersonalAssistant(String paName, int paAge, int paSalary, int paExperience,Security security){
+    public PersonalAssistan(String paName, int paAge, int paSalary, int paExperience,Security security){
         this.paName=paName;
         this.paAge=paAge;
         this.paSalary=paSalary;
