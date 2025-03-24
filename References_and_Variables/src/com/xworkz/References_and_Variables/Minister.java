@@ -4,10 +4,10 @@ public class Minister {
     String ministerState;
     String ministerPosition;
     int ministerSalary;
-    PersonalAssistant[] pa;
+    PersonalAssistan[] pa;
 
 
-    Minister(String ministerName,String ministerState,String ministerPosition,int ministerSalary,PersonalAssistant[] pa) {
+    Minister(String ministerName,String ministerState,String ministerPosition,int ministerSalary,PersonalAssistan[] pa) {
         this.ministerName = ministerName;
         this.ministerState = ministerState;
         this.ministerPosition = ministerPosition;
@@ -26,7 +26,7 @@ public class Minister {
         System.out.println("Minister    Position "+this.ministerPosition);
         System.out.println("Minister Salary "+this.ministerSalary);
         System.out.println("----------------------");
-        for(PersonalAssistant ref:pa){
+        for(PersonalAssistan ref:pa){
             if(ref!=null){
                 ref.paDisplay();
                 System.out.println("---------------------end of info ------------------------");

@@ -41,11 +41,11 @@ public class PrimeMinister {
     }));
 
 
-    PersonalAssistant[] p1=new PersonalAssistant[]{
-            new PersonalAssistant("John",23,50000,5,new Security(4001,pe1))
+    PersonalAssistan[] p1=new PersonalAssistan[]{
+            new PersonalAssistan("John",23,50000,5,new Security(4001,pe1))
     };
-    PersonalAssistant[] p2=new PersonalAssistant[]{
-            new PersonalAssistant("Rahul",25,50000,5,new Security(5001,pe2))
+    PersonalAssistan[] p2=new PersonalAssistan[]{
+            new PersonalAssistan("Rahul",25,50000,5,new Security(5001,pe2))
     };
 
 
