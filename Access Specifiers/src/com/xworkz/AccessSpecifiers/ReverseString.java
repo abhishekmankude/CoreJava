@@ -11,6 +11,6 @@ public class ReverseString {
            n=n/10;
 
        }
-        System.out.println(rev);
+         System.out.println(rev);
     }
 }
