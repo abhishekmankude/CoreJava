@@ -1,4 +1,4 @@
-package com.xworkz.inheritance.Local;
+package com.xworkz.inheritance.SuperClass;
 
 public class Shoe {
     public void sole()

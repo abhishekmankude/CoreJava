@@ -1,9 +1,10 @@
 package com.xworkz.inheritance.Runner;
 
-import com.xworkz.inheritance.Local.Nike;
-import com.xworkz.inheritance.Local.Shoe;
+import com.xworkz.inheritance.SubClass.Adidas;
+import com.xworkz.inheritance.SubClass.Nike;
+import com.xworkz.inheritance.SuperClass.Shoe;
 
-public class NikeRunner {
+public class MainRunner {
     public static void main(String[] args) {
         Shoe shoe=new Shoe();
         shoe.color();
@@ -25,6 +26,20 @@ public class NikeRunner {
         shoe1.brand();
         shoe1.lase();
         shoe1.color();
+
+        Adidas adidas=new Adidas();
+        adidas.brand();
+        adidas.lase();
+        adidas.color();
+        adidas.sole();
+        adidas.price();
+
+        Shoe shoe2=new Adidas();
+        shoe2.brand();
+        shoe2.lase();
+        shoe2.color();
+        shoe2.sole();
+        shoe2.price();
 
     }
 }
