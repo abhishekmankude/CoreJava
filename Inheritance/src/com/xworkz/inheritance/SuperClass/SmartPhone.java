@@ -1,6 +1,6 @@
 package com.xworkz.inheritance.SuperClass;
 
-public class SmatPhone {
+public class SmartPhone {
 
         public void display()
         {
