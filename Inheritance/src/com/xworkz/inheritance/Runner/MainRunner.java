@@ -1,9 +1,6 @@
 package com.xworkz.inheritance.Runner;
 
-import com.xworkz.inheritance.SubClass.Adidas;
-import com.xworkz.inheritance.SubClass.Nike;
-import com.xworkz.inheritance.SubClass.RedLight;
-import com.xworkz.inheritance.SubClass.Sparx;
+import com.xworkz.inheritance.SubClass.*;
 import com.xworkz.inheritance.SuperClass.Shoe;
 import com.xworkz.inheritance.SuperClass.TrafficLight;
 
@@ -59,6 +56,12 @@ public class MainRunner {
 
         TrafficLight trafficLight1=new RedLight();
         trafficLight1.color();
+
+        GreenLight greenLight=new GreenLight();
+        greenLight.color();
+
+        TrafficLight trafficLight2=new GreenLight();
+        trafficLight2.color();
     }
 }
 
