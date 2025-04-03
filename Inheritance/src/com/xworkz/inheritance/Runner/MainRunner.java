@@ -2,6 +2,7 @@ package com.xworkz.inheritance.Runner;
 
 import com.xworkz.inheritance.SubClass.*;
 import com.xworkz.inheritance.SuperClass.Shoe;
+import com.xworkz.inheritance.SuperClass.SmatPhone;
 import com.xworkz.inheritance.SuperClass.TrafficLight;
 
 public class MainRunner {
@@ -62,6 +63,24 @@ public class MainRunner {
 
         TrafficLight trafficLight2=new GreenLight();
         trafficLight2.color();
+
+
+        SmatPhone smatPhone=new SmatPhone();
+        smatPhone.display();
+        smatPhone.camera();
+        smatPhone.battery();
+        smatPhone.brand();
+        smatPhone.price();
+
+
+        Samsung samsung = new Samsung();
+        samsung.display();
+        samsung.camera();
+        samsung.battery();
+        samsung.brand();
+        samsung.price();
+
+
     }
 }
 
