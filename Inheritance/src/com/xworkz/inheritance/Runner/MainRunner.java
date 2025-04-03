@@ -2,8 +2,10 @@ package com.xworkz.inheritance.Runner;
 
 import com.xworkz.inheritance.SubClass.Adidas;
 import com.xworkz.inheritance.SubClass.Nike;
+import com.xworkz.inheritance.SubClass.RedLight;
 import com.xworkz.inheritance.SubClass.Sparx;
 import com.xworkz.inheritance.SuperClass.Shoe;
+import com.xworkz.inheritance.SuperClass.TrafficLight;
 
 public class MainRunner {
     public static void main(String[] args) {
@@ -48,6 +50,15 @@ public class MainRunner {
         sparx.sole();
         sparx.price();
         sparx.color();
+
+        TrafficLight trafficLight=new TrafficLight();
+        trafficLight.color();
+
+        RedLight redLight=new RedLight();
+        redLight.color();
+
+        TrafficLight trafficLight1=new RedLight();
+        trafficLight1.color();
     }
 }
 
