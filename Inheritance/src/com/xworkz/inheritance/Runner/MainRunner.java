@@ -306,6 +306,62 @@ public class MainRunner {
         kidsTablet.brand();
         kidsTablet.price();
 
+        SmartTV smartTV = new SmartTV();
+        smartTV.screenSize();
+        smartTV.resolution();
+        smartTV.brand();
+        smartTV.price();
+
+        LEDTV ledTV = new LEDTV();
+        ledTV.screenSize();
+        ledTV.resolution();
+        ledTV.brand();
+        ledTV.price();
+
+        OLEDTV oledTV = new OLEDTV();
+        oledTV.screenSize();
+        oledTV.resolution();
+        oledTV.brand();
+        oledTV.price();
+
+        PlasmaTV plasmaTV = new PlasmaTV();
+        plasmaTV.screenSize();
+        plasmaTV.resolution();
+        plasmaTV.brand();
+        plasmaTV.price();
+
+        SingleDoorRefrigerator singleDoorRefrigerator = new SingleDoorRefrigerator();
+        singleDoorRefrigerator.coolingSystem();
+        singleDoorRefrigerator.capacity();
+        singleDoorRefrigerator.brand();
+        singleDoorRefrigerator.price();
+
+        DoubleDoorRefrigerator doubleDoorRefrigerator = new DoubleDoorRefrigerator();
+        doubleDoorRefrigerator.coolingSystem();
+        doubleDoorRefrigerator.capacity();
+        doubleDoorRefrigerator.brand();
+        doubleDoorRefrigerator.price();
+
+        SideBySideRefrigerator sideBySideRefrigerator = new SideBySideRefrigerator();
+        sideBySideRefrigerator.coolingSystem();
+        sideBySideRefrigerator.capacity();
+        sideBySideRefrigerator.brand();
+        sideBySideRefrigerator.price();
+
+        MiniFridge miniFridge = new MiniFridge();
+        miniFridge.coolingSystem();
+        miniFridge.capacity();
+        miniFridge.brand();
+        miniFridge.price();
+
+        SmartFridge smartFridge = new SmartFridge();
+        smartFridge.coolingSystem();
+        smartFridge.capacity();
+        smartFridge.brand();
+        smartFridge.price();
+
+
+
 
 
 
