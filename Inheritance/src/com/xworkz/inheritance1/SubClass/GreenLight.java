@@ -7,4 +7,10 @@ public class GreenLight extends TrafficLight {
     {
         System.out.println("Runnig Greenlight const in Greenlight");
     }
+
+@Override
+public void color()
+{
+    System.out.println("color is runnig in GreenLight");
+}
 }

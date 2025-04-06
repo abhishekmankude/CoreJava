@@ -7,5 +7,9 @@ public class RedLight extends TrafficLight {
     {
         System.out.println("Runnig Redlight in traffic light");
     }
-
+@Override
+public void color()
+{
+    System.out.println("color is runnig in Red Lightt");
+}
 }

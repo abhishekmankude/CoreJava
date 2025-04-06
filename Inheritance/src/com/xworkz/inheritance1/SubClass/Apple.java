@@ -6,4 +6,6 @@ public class Apple extends SmartPhone {
     public Apple() {
         System.out.println("Apple constructor is running");
     }
+
+
 }
