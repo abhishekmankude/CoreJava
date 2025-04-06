@@ -17,7 +17,7 @@ public class PalindromeChecker {
 
     public static void main(String[] args) {
         PalindromeChecker pc = new PalindromeChecker();
-        System.out.println(pc.isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(pc.isPalindrome("A man, a plan, a canal:???? Panama"));
         System.out.println(pc.isPalindrome("race a car"));
         System.out.println(pc.isPalindrome(" "));
     }

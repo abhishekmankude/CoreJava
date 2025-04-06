@@ -7,4 +7,16 @@ public class A extends AlphabetsStartingFrom {
     {
         System.out.println("non arg const in A");
     }
+
+    @Override
+    public void sizeOfAlphabet()
+    {
+        System.out.println("size of alphabets is running in A");
+    }
+
+    @Override
+    public void positionOfAlphabet()
+    {
+        System.out.println("position of alphabets is running in A");
+    }
 }
