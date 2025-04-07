@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Scorpio;
 import com.xworkxz.inheritance2.subclass.Car;
 import com.xworkxz.inheritance2.superclass.Vehicle;
 
@@ -25,5 +26,9 @@ public class VehicleRunner {
         car.accelerate();
         car.brake();
         car.honk();
+
+        Scorpio scorpio=new Scorpio();
+        scorpio.range(vehicle);
+        scorpio.range(car);
     }
 }

@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.B;
 import com.xworkxz.inheritance2.subclass.A;
 import com.xworkxz.inheritance2.superclass.AlphabetsStartingFrom;
 
@@ -17,6 +18,9 @@ public class AlphabetsStartingFromRunner {
         alphabetsStartingFrom.positionOfAlphabet();
         alphabetsStartingFrom.sizeOfAlphabet();
 
+        B b=new B();
+        b.range(alphabetsStartingFrom);
+        b.range(a);
 
     }
 }

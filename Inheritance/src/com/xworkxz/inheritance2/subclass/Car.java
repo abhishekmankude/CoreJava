@@ -11,5 +11,7 @@ public class Car extends Vehicle {
     public void brake() { System.out.println("Car braking"); }
     public void honk() { System.out.println("Car honking"); }
 
-
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

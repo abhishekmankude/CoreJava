@@ -28,4 +28,7 @@ public class Apple extends Fruits {
     {
         System.out.println("price is running in Apple");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.JackFruit;
 import com.xworkxz.inheritance2.subclass.Apple;
 import com.xworkxz.inheritance2.superclass.Fruits;
 
@@ -25,5 +26,10 @@ public class FruitsRunner {
         apple.origin();
         apple.size();
         apple.price();
+
+        JackFruit jackFruit=new JackFruit();
+        jackFruit.range(fruits);
+        jackFruit.range(apple);
+
     }
 }

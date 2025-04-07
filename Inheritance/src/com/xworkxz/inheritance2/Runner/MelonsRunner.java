@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Limbu;
 import com.xworkxz.inheritance2.subclass.Watermelon;
 import com.xworkxz.inheritance2.superclass.Melons;
 
@@ -25,5 +26,17 @@ public class MelonsRunner {
         watermelon.size();
         watermelon.origin();
         watermelon.price();
+
+
+
+
+        Limbu limbu=new Limbu();
+        limbu.taste(melons);
+        limbu.taste(watermelon);
+
+
+
+
+
     }
 }

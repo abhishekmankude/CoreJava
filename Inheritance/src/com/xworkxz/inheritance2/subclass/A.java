@@ -19,4 +19,7 @@ public class A extends AlphabetsStartingFrom {
     {
         System.out.println("position of alphabets is running in A");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

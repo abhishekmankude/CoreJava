@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Deer;
 import com.xworkxz.inheritance2.subclass.Dog;
 import com.xworkxz.inheritance2.superclass.Animal;
 
@@ -25,5 +26,12 @@ public class AnimalRunner {
         dog.move();
         dog.breathe();
         dog.reproduce();
+//////////////////////////////
+        Deer deer=new Deer();
+        deer.horns(animal);
+        deer.horns(dog);
+
+
+
     }
 }

@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.LadiesFinger;
 import com.xworkxz.inheritance2.subclass.Apple;
 import com.xworkxz.inheritance2.subclass.Tomato;
 import com.xworkxz.inheritance2.superclass.Fruits;
@@ -27,5 +28,10 @@ public class VegetablesRunner {
         tomato.origin();
         tomato.size();
         tomato.price();
+
+        LadiesFinger ladiesFinger=new LadiesFinger();
+        ladiesFinger.range(vegetables);
+        ladiesFinger.range(tomato);
+
     }
 }

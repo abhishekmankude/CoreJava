@@ -30,5 +30,9 @@ public class Tomato extends Vegetables {
         System.out.println("price is running in Tomato");
     }
 
+    public void country(){
+        System.out.println("Country is Running");
+    }
+
 
 }
