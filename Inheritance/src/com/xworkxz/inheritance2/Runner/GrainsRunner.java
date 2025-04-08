@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Wheat;
 import com.xworkxz.inheritance2.subclass.Rice;
 import com.xworkxz.inheritance2.superclass.Grains;
 
@@ -25,5 +26,9 @@ public class GrainsRunner {
         rice.nutritionalValue();
         rice.origin();
         rice.price();
+        //////////////////////////////
+        Wheat wheat = new Wheat();
+        wheat.process(grains);
+        wheat.process(rice);
     }
 }

@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.TV;
 import com.xworkxz.inheritance2.subclass.WashingMachine;
 import com.xworkxz.inheritance2.superclass.HomeAppliance;
 
@@ -25,5 +26,9 @@ public class HomeApplianceRunner {
         washingMachine.clean();
         washingMachine.maintain();
         washingMachine.replace();
+        //////////////////////////////
+        TV tv = new TV();
+        tv.use(appliance);
+        tv.use(washingMachine);
     }
 }

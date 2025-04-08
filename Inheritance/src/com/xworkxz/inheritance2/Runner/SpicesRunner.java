@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.peppeer;
 import com.xworkxz.inheritance2.subclass.Cinnamon;
 import com.xworkxz.inheritance2.superclass.Spices;
 
@@ -24,6 +25,8 @@ public class SpicesRunner {
         cinnamon.aroma();
         cinnamon.heatLevel();
         cinnamon.origin();
-        cinnamon.price();
+        cinnamon.price();   peppeer pepper = new peppeer();
+        pepper.grind(spices);
+        pepper.grind(cinnamon);
     }
 }

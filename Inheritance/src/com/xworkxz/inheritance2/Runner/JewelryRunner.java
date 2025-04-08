@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Chain;
 import com.xworkxz.inheritance2.subclass.Necklace;
 import com.xworkxz.inheritance2.superclass.Jewelry;
 
@@ -25,5 +26,10 @@ public class JewelryRunner {
         necklace.clean();
         necklace.store();
         necklace.appraise();
+
+        //////////////////////////////
+        Chain chain = new Chain();
+        chain.maintain(jewelry);
+        chain.maintain(necklace);
     }
 }

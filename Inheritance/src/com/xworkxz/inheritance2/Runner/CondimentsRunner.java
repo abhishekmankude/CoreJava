@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Butter;
 import com.xworkxz.inheritance2.subclass.Ketchup;
 import com.xworkxz.inheritance2.superclass.Condiments;
 
@@ -25,5 +26,9 @@ public class CondimentsRunner {
         ketchup.size();
         ketchup.origin();
         ketchup.price();
+        //////////////////////////////
+        Butter butter = new Butter();
+        butter.spread(condiments);
+        butter.spread(ketchup);
     }
 }

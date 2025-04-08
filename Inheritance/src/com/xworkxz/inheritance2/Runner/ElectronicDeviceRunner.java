@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.SmartCharger;
 import com.xworkxz.inheritance2.subclass.Smartphone;
 import com.xworkxz.inheritance2.superclass.ElectronicDevice;
 
@@ -25,5 +26,11 @@ public class ElectronicDeviceRunner {
         smartphone.charge();
         smartphone.updateSoftware();
         smartphone.connectToWifi();
+
+
+        //////////////////////////////
+        SmartCharger charger = new SmartCharger();
+        charger.chargeDevice(device);
+        charger.chargeDevice(smartphone);
     }
 }

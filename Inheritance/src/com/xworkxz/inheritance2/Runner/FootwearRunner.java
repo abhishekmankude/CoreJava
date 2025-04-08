@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Sandles;
 import com.xworkxz.inheritance2.subclass.Sneakers;
 import com.xworkxz.inheritance2.superclass.Footwear;
 
@@ -25,5 +26,11 @@ public class FootwearRunner {
         sneakers.polish();
         sneakers.lace();
         sneakers.store();
+
+
+        //////////////////////////////
+        Sandles sandles = new Sandles();
+        sandles.use(footwear);
+        sandles.use(sneakers);
     }
 }

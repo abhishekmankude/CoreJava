@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Kadike;
 import com.xworkxz.inheritance2.subclass.Spinach;
 import com.xworkxz.inheritance2.superclass.LeafyGreens;
 
@@ -25,5 +26,10 @@ public class LeafyGreensRunner {
         spinach.size();
         spinach.origin();
         spinach.price();
+
+        //////////////////////////////
+        Kadike kadike = new Kadike();
+        kadike.prepare(greens);
+        kadike.prepare(spinach);
     }
 }

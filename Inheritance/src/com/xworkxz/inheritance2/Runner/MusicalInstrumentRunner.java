@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Sitar;
 import com.xworkxz.inheritance2.subclass.Guitar;
 import com.xworkxz.inheritance2.superclass.MusicalInstrument;
 
@@ -24,6 +25,9 @@ public class MusicalInstrumentRunner {
         guitar.tune();
         guitar.clean();
         guitar.store();
-        guitar.transport();
+        guitar.transport();   //////////////////////////////
+        Sitar sitar = new Sitar();
+        sitar.maintain(instrument);
+        sitar.maintain(guitar);
     }
 }

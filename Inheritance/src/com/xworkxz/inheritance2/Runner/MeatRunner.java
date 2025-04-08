@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Pork;
 import com.xworkxz.inheritance2.subclass.Chicken;
 import com.xworkxz.inheritance2.superclass.Meat;
 
@@ -25,5 +26,9 @@ public class MeatRunner {
         chicken.freshness();
         chicken.origin();
         chicken.price();
+        //////////////////////////////
+        Pork pork = new Pork();
+        pork.prepare(meat);
+        pork.prepare(chicken);
     }
 }

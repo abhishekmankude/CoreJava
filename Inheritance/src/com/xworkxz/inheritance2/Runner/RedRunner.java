@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.RedPlant;
 import com.xworkxz.inheritance2.subclass.RedSub;
 import com.xworkxz.inheritance2.superclass.Red;
 
@@ -25,5 +26,9 @@ public class RedRunner {
         red1.origin();
         red1.price();
         red1.size();
+
+        RedPlant redPlant = new RedPlant();
+        redPlant.grow(red);
+        redPlant.grow(redSub);
     }
 }

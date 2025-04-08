@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Basale;
 import com.xworkxz.inheritance2.subclass.Basil;
 import com.xworkxz.inheritance2.superclass.Herbs;
 
@@ -25,5 +26,10 @@ public class HerbsRunner {
         basil.medicinalValue();
         basil.origin();
         basil.price();
+
+        //////////////////////////////
+        Basale basale = new Basale();
+        basale.cultivate(herbs);
+        basale.cultivate(basil);
     }
 }

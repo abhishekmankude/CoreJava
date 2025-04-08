@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Ladder;
 import com.xworkxz.inheritance2.subclass.Hammer;
 import com.xworkxz.inheritance2.superclass.Tool;
 
@@ -25,5 +26,9 @@ public class ToolRunner {
         hammer.clean();
         hammer.store();
         hammer.repair();
+
+        Ladder ladder = new Ladder();
+        ladder.maintain(tool);
+        ladder.maintain(hammer);
     }
 }

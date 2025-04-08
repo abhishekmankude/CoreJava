@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Pineapple;
 import com.xworkxz.inheritance2.subclass.Orange;
 import com.xworkxz.inheritance2.superclass.CitrusFruits;
 
@@ -25,5 +26,10 @@ public class CitrusFruitsRunner {
         orange.size();
         orange.origin();
         orange.price();
+
+        Pineapple pineapple=new Pineapple();
+        pineapple.range(citrus);
+        pineapple.range(orange);
+
     }
 }

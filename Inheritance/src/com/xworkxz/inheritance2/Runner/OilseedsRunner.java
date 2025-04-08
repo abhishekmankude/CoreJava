@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Groundnut;
 import com.xworkxz.inheritance2.subclass.SunflowerSeed;
 import com.xworkxz.inheritance2.superclass.Oilseeds;
 
@@ -24,6 +25,9 @@ public class OilseedsRunner {
         sunflowerSeed.kg();
         sunflowerSeed.size();
         sunflowerSeed.origin();
-        sunflowerSeed.price();
+        sunflowerSeed.price();  // Added Groundnut functionality
+        Groundnut groundnut = new Groundnut();
+        groundnut.properties(oilseeds);
+        groundnut.properties(sunflowerSeed);
     }
 }

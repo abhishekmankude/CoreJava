@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.JCB;
 import com.xworkxz.inheritance2.subclass.Doll;
 import com.xworkxz.inheritance2.superclass.Toy;
 
@@ -25,5 +26,9 @@ public class ToyRunner {
         doll.clean();
         doll.assemble();
         doll.giftWrap();
+        JCB jcb = new JCB();
+        jcb.interactWithToy(toy);
+        jcb.interactWithToy(toy1);
+        jcb.interactWithToy(doll);
     }
 }

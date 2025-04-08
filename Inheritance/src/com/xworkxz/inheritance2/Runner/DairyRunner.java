@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Curd;
 import com.xworkxz.inheritance2.subclass.Milk;
 import com.xworkxz.inheritance2.superclass.Dairy;
 
@@ -25,5 +26,10 @@ public class DairyRunner {
         milk.expiryDate();
         milk.brand();
         milk.price();
+
+        //////////////////////////////
+        Curd curd = new Curd();
+        curd.make(dairy);
+        curd.make(milk);
     }
 }

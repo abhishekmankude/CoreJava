@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Bat;
 import com.xworkxz.inheritance2.subclass.Football;
 import com.xworkxz.inheritance2.superclass.SportsEquipment;
 
@@ -25,5 +26,9 @@ public class SportsEquipmentRunner {
         football.clean();
         football.repair();
         football.upgrade();
+
+        Bat bat = new Bat();
+        bat.play(equipment);
+        bat.play(football);
     }
 }

@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Loco;
 import com.xworkxz.inheritance2.subclass.Lobster;
 import com.xworkxz.inheritance2.superclass.Shellfish;
 
@@ -25,5 +26,8 @@ public class ShellfishRunner {
         lobster.size();
         lobster.origin();
         lobster.price();
+        Loco loco = new Loco();
+        loco.crustacean(shellfish);
+        loco.crustacean(lobster);
     }
 }

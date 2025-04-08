@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Trafficc;
 import com.xworkxz.inheritance2.subclass.TrafficSub;
 import com.xworkxz.inheritance2.superclass.Traffic;
 
@@ -26,6 +27,11 @@ public class TrafficRunner
         traffic.color();
         traffic.origin();
         traffic.price();
+
+        Trafficc trafficc = new Trafficc();
+        trafficc.displayTrafficInfo(traffic);
+        trafficc.displayTrafficInfo(trafficSub);
+        trafficc.displayTrafficInfo(traffic1);
 
 
     }

@@ -1,6 +1,7 @@
 package com.xworkxz.inheritance2.Runner;
 
 
+import com.xworkxz.inheritance2.NewClasses.Leatch;
 import com.xworkxz.inheritance2.subclass.Peach;
 import com.xworkxz.inheritance2.superclass.StoneFruits;
 
@@ -25,6 +26,8 @@ public class StoneFruitsRunner {
         peach.kg();
         peach.size();
         peach.origin();
-        peach.price();
+        peach.price();   Leatch leatch = new Leatch();
+        leatch.process(fruits);
+        leatch.process(peach);
     }
 }

@@ -1,6 +1,7 @@
 package com.xworkxz.inheritance2.Runner;
 
 
+import com.xworkxz.inheritance2.NewClasses.FrozenFish;
 import com.xworkxz.inheritance2.subclass.FrozenPizza;
 import com.xworkxz.inheritance2.superclass.FrozenFood;
 
@@ -26,5 +27,10 @@ public class FrozenFoodRunner {
         frozenPizza.expiryDate();
         frozenPizza.origin();
         frozenPizza.price();
+
+        //////////////////////////////
+        FrozenFish fish = new FrozenFish();
+        fish.prepare(frozenFood);
+        fish.prepare(frozenPizza);
     }
 }

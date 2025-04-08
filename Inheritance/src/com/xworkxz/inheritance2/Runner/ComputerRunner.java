@@ -1,5 +1,7 @@
 package com.xworkxz.inheritance2.Runner;
 
+//import com.xworkxz.inheritance2.NewClasses.PC;
+import com.xworkxz.inheritance2.NewClasses.PC;
 import com.xworkxz.inheritance2.subclass.Laptop;
 import com.xworkxz.inheritance2.superclass.Computer;
 
@@ -25,5 +27,10 @@ public class ComputerRunner {
         laptop.process();
         laptop.connect();
         laptop.update();
+
+
+        PC pc = new PC();
+        pc.performance(computer);
+        pc.performance(laptop);
     }
 }

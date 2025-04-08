@@ -1,6 +1,7 @@
 package com.xworkxz.inheritance2.Runner;
 
 
+import com.xworkxz.inheritance2.NewClasses.Chilli;
 import com.xworkxz.inheritance2.subclass.Potato;
 import com.xworkxz.inheritance2.superclass.Tubers;
 
@@ -25,6 +26,8 @@ public class TubersRunner {
         potato.kg();
         potato.size();
         potato.origin();
-        potato.price();
+        potato.price();   Chilli chilli = new Chilli();
+        chilli.prepare(tubers);
+        chilli.prepare(potato);
     }
 }

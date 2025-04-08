@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Lily;
 import com.xworkxz.inheritance2.subclass.Rose;
 import com.xworkxz.inheritance2.superclass.Plant;
 
@@ -24,6 +25,9 @@ public class PlantRunner {
         rose.photosynthesize();
         rose.absorbWater();
         rose.produceOxygen();
-        rose.bloom();
+        rose.bloom();   // Added Lily functionality
+        Lily lily = new Lily();
+        lily.characteristics(plant);
+        lily.characteristics(rose);
     }
 }

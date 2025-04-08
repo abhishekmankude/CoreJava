@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Beatroot;
 import com.xworkxz.inheritance2.subclass.Carrot;
 import com.xworkxz.inheritance2.superclass.Roots;
 
@@ -25,5 +26,9 @@ public class RootsRunner {
         carrot.size();
         carrot.origin();
         carrot.price();
+
+        Beatroot beatroot = new Beatroot();
+        beatroot.juice(roots);
+        beatroot.juice(carrot);
     }
 }

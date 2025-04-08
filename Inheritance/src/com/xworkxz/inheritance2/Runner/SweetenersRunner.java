@@ -1,6 +1,7 @@
 package com.xworkxz.inheritance2.Runner;
 
 
+import com.xworkxz.inheritance2.NewClasses.Ghee;
 import com.xworkxz.inheritance2.subclass.Honey;
 import com.xworkxz.inheritance2.superclass.Sweeteners;
 
@@ -26,5 +27,10 @@ public class SweetenersRunner {
         honey.size();
         honey.origin();
         honey.price();
+
+        Ghee ghee = new Ghee();
+        ghee.checkSweetener(sweeteners);
+        ghee.checkSweetener(sweeteners1);
+        ghee.checkSweetener(honey);
     }
 }

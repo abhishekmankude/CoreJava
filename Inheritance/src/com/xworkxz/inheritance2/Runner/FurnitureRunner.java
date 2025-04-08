@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Bench;
 import com.xworkxz.inheritance2.subclass.Chair;
 import com.xworkxz.inheritance2.superclass.Furniture;
 
@@ -25,5 +26,10 @@ public class FurnitureRunner {
         chair.clean();
         chair.move();
         chair.polish();
+
+        //////////////////////////////
+        Bench bench = new Bench();
+        bench.use(furniture);
+        bench.use(chair);
     }
 }

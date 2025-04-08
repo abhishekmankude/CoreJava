@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.CoffeeSeeds;
 import com.xworkxz.inheritance2.subclass.ChiaSeed;
 import com.xworkxz.inheritance2.superclass.EdibleSeeds;
 
@@ -25,5 +26,10 @@ class EdibleSeedsRunner {
         chiaSeed.size();
         chiaSeed.origin();
         chiaSeed.price();
+
+        //////////////////////////////
+        CoffeeSeeds coffeeSeeds = new CoffeeSeeds();
+        coffeeSeeds.roast(seeds);
+        coffeeSeeds.roast(chiaSeed);
     }
 }

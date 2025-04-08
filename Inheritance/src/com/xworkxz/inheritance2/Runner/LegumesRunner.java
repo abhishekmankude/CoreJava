@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Pepper;
 import com.xworkxz.inheritance2.subclass.Peanut;
 import com.xworkxz.inheritance2.superclass.Legumes;
 
@@ -25,5 +26,9 @@ public class LegumesRunner {
         peanut.size();
         peanut.origin();
         peanut.price();
+        //////////////////////////////
+        Pepper pepper = new Pepper();
+        pepper.process(legumes);
+        pepper.process(peanut);
     }
 }

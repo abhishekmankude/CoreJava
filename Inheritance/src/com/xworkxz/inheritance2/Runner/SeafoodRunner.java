@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.jelly;
 import com.xworkxz.inheritance2.superclass.Seafood;
 import com.xworkxz.inheritance2.subclass.Salmon;
 
@@ -25,6 +26,9 @@ public class SeafoodRunner {
         salmon.freshness();
         salmon.origin();
         salmon.price();
+        jelly jelly = new jelly();
+        jelly.fish(seafood);
+        jelly.fish(salmon);
     }
 }
 

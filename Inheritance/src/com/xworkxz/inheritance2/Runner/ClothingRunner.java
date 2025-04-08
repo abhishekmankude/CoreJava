@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Pant;
 import com.xworkxz.inheritance2.subclass.Shirt;
 import com.xworkxz.inheritance2.superclass.Clothing;
 
@@ -25,5 +26,9 @@ public class ClothingRunner {
         shirt.dry();
         shirt.iron();
         shirt.fold();
+
+        Pant pant=new Pant();
+        pant.range(clothing);
+        pant.range(shirt);
     }
 }

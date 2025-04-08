@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Greengram;
 import com.xworkxz.inheritance2.subclass.Lentils;
 import com.xworkxz.inheritance2.superclass.Pulses;
 
@@ -24,5 +25,8 @@ public class PulsesRunner {
         lentils.proteinContent();
         lentils.weight();
         lentils.origin();
-        lentils.price();
+        lentils.price();   // Added Greengram functionality
+        Greengram greengram = new Greengram();
+        greengram.properties(pulses);
+        greengram.properties(lentils);
     }}

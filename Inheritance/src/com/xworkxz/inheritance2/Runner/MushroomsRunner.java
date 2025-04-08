@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.LongMushroom;
 import com.xworkxz.inheritance2.subclass.ButtonMushroom;
 import com.xworkxz.inheritance2.superclass.Mushrooms;
 
@@ -25,5 +26,10 @@ public class MushroomsRunner {
         buttonMushroom.size();
         buttonMushroom.origin();
         buttonMushroom.price();
+
+        //////////////////////////////
+        LongMushroom longMushroom = new LongMushroom();
+        longMushroom.cook(mushrooms);
+        longMushroom.cook(buttonMushroom);
     }
 }
