@@ -12,4 +12,6 @@ public void color() { System.out.println("Color is running in Lobster"); }
     public void size() { System.out.println("Size is running in Lobster"); }
     public void origin() { System.out.println("Origin is running in Lobster"); }
     public void price() { System.out.println("Price is running in Lobster"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

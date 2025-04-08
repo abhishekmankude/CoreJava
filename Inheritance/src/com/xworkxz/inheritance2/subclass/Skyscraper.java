@@ -10,4 +10,7 @@ public void construct() { System.out.println("Skyscraper constructed"); }
     public void paint() { System.out.println("Skyscraper being painted"); }
     public void renovate() { System.out.println("Skyscraper being renovated"); }
     public void occupy() { System.out.println("Skyscraper being occupied"); }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

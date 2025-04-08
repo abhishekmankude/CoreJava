@@ -9,4 +9,6 @@ public void color() { System.out.println("Color is running in SunflowerSeed"); }
     public void size() { System.out.println("size is running in SunflowerSeed"); }
     public void origin() { System.out.println("origin is running in SunflowerSeed"); }
     public void price() { System.out.println("price is running in SunflowerSeed"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

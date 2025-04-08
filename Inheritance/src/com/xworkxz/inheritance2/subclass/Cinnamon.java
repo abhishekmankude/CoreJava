@@ -23,4 +23,7 @@ public class Cinnamon extends Spices {
     public void price() {
         System.out.println("Price is running in Cinnamon");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

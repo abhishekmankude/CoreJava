@@ -11,4 +11,6 @@ public void wear() { System.out.println("Necklace being worn"); }
     public void clean() { System.out.println("Necklace being cleaned"); }
     public void store() { System.out.println("Necklace being stored"); }
     public void appraise() { System.out.println("Necklace being appraised"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

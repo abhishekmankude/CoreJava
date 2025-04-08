@@ -11,4 +11,6 @@ public void assemble() { System.out.println("Chair assembling"); }
     public void clean() { System.out.println("Chair cleaning"); }
     public void move() { System.out.println("Chair moving"); }
     public void polish() { System.out.println("Chair polishing"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

@@ -27,4 +27,6 @@ public class RedSub extends Red {
     {
         System.out.println("price is running in RedSub");
     }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

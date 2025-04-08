@@ -21,5 +21,7 @@ public class Milk extends Dairy {
     }
     public void price() {
         System.out.println("Price is running in Milk");
+    }public void country(){
+        System.out.println("Country is Running");
     }
 }

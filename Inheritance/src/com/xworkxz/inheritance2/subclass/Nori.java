@@ -9,4 +9,6 @@ public void color() { System.out.println("Color is running in Nori"); }
     public void size() { System.out.println("size is running in Nori"); }
     public void origin() { System.out.println("origin is running in Nori"); }
     public void price() { System.out.println("price is running in Nori"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

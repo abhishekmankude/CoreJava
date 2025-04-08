@@ -11,4 +11,6 @@ public void apply() { System.out.println("Lipstick being applied"); }
     public void purchase() { System.out.println("Lipstick being purchased"); }
     public void store() { System.out.println("Lipstick being stored"); }
     public void checkExpiry() { System.out.println("Lipstick expiry being checked"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

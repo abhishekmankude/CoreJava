@@ -22,4 +22,7 @@ public class FrozenPizza extends FrozenFood {
     public void price() {
         System.out.println("Price is running in FrozenPizza");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

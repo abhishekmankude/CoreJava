@@ -21,5 +21,7 @@ public class Rice extends Grains {
     }
     public void price() {
         System.out.println("Price is running in Rice");
+    }public void country(){
+        System.out.println("Country is Running");
     }
 }

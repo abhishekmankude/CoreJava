@@ -10,4 +10,6 @@ public void use() { System.out.println("Football being used"); }
     public void clean() { System.out.println("Football being cleaned"); }
     public void repair() { System.out.println("Football being repaired"); }
     public void upgrade() { System.out.println("Football being upgraded"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Nikon;
 import com.xworkxz.inheritance2.subclass.DSLR;
 import com.xworkxz.inheritance2.superclass.Camera;
 
@@ -25,5 +26,11 @@ public class CameraRunner {
         dslr.zoom();
         dslr.store();
         dslr.transferPhotos();
+
+
+        Nikon nikon=new Nikon();
+        nikon.range(camera);
+        nikon.range(dslr);
+
     }
 }

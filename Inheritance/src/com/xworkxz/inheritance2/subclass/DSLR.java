@@ -10,4 +10,7 @@ public void capture() { System.out.println("DSLR capturing"); }
     public void zoom() { System.out.println("DSLR zooming"); }
     public void store() { System.out.println("DSLR being stored"); }
     public void transferPhotos() { System.out.println("DSLR transferring photos"); }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

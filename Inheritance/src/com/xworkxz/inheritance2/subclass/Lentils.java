@@ -22,4 +22,6 @@ public class Lentils extends Pulses {
     public void price() {
         System.out.println("Price is running in Lentils");
     }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

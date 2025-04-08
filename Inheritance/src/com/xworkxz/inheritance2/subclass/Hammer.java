@@ -11,4 +11,6 @@ public void useTool() { System.out.println("Hammer being used"); }
     public void clean() { System.out.println("Hammer being cleaned"); }
     public void store() { System.out.println("Hammer being stored"); }
     public void repair() { System.out.println("Hammer being repaired"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

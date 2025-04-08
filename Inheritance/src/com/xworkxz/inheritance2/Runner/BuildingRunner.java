@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Landscraper;
 import com.xworkxz.inheritance2.subclass.Skyscraper;
 import com.xworkxz.inheritance2.superclass.Building;
 
@@ -25,5 +26,10 @@ public class BuildingRunner {
         skyscraper.paint();
         skyscraper.renovate();
         skyscraper.occupy();
+
+        Landscraper landscraper=new Landscraper();
+        landscraper.range(building);
+        landscraper.range(skyscraper);
+
     }
 }

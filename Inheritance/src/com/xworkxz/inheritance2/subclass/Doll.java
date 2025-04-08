@@ -12,4 +12,6 @@ public void playWith() { System.out.println("Doll being played with"); }
     public void clean() { System.out.println("Doll being cleaned"); }
     public void assemble() { System.out.println("Doll being assembled"); }
     public void giftWrap() { System.out.println("Doll being gift-wrapped"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

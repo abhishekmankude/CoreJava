@@ -22,4 +22,7 @@ public class Basil extends Herbs {
     public void price() {
         System.out.println("Price is running in Basil");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

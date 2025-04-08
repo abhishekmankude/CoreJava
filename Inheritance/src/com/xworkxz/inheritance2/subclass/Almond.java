@@ -22,4 +22,7 @@ public class Almond extends Nuts {
     public void price() {
         System.out.println("Price is running in Almond");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

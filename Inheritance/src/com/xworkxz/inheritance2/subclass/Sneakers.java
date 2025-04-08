@@ -11,4 +11,6 @@ public void wear() { System.out.println("Sneakers being worn"); }
     public void polish() { System.out.println("Sneakers being polished"); }
     public void lace() { System.out.println("Sneakers being laced"); }
     public void store() { System.out.println("Sneakers being stored"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

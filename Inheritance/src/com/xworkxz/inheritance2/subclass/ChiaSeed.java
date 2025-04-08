@@ -10,6 +10,8 @@ public class ChiaSeed extends EdibleSeeds { public ChiaSeed() { System.out.print
     public void size() { System.out.println("size is running in ChiaSeed"); }
     public void origin() { System.out.println("origin is running in ChiaSeed"); }
     public void price() { System.out.println("price is running in ChiaSeed"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}
 
 

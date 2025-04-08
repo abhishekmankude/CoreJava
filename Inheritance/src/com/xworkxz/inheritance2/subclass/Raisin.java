@@ -9,4 +9,6 @@ public void color() { System.out.println("Color is running in Raisin Fruits"); }
     public void size() { System.out.println("size is running in Raisin Fruits"); }
     public void origin() { System.out.println("origin is running in Raisin Fruits"); }
     public void price() { System.out.println("price is running in Raisin Fruits"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

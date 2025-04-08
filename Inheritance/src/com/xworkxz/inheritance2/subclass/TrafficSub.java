@@ -28,5 +28,7 @@ public void color()
     public void price()
     {
         System.out.println("price is running in TrafficSub");
-    }
+    }   public void country(){
+    System.out.println("Country is Running");
+}
 }

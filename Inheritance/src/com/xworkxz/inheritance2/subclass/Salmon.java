@@ -23,5 +23,7 @@ public class Salmon extends Seafood {
         System.out.println("Price is running in Salmon");
     }
 
-
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

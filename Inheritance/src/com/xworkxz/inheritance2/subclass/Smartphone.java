@@ -11,4 +11,6 @@ public void powerOn() { System.out.println("Smartphone powering on"); }
     public void charge() { System.out.println("Smartphone charging"); }
     public void updateSoftware() { System.out.println("Smartphone updating software"); }
     public void connectToWifi() { System.out.println("Smartphone connecting to WiFi"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

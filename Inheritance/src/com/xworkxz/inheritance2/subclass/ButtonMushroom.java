@@ -11,6 +11,8 @@ public class ButtonMushroom extends Mushrooms {
     public void size() { System.out.println("Size is running in ButtonMushroom"); }
     public void origin() { System.out.println("Origin is running in ButtonMushroom"); }
     public void price() { System.out.println("Price is running in ButtonMushroom"); }
-
+    public void country(){
+        System.out.println("Country is Running");
+    }
 
 }

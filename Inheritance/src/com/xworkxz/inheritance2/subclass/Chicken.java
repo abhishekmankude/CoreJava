@@ -23,4 +23,7 @@ public class Chicken extends Meat {
     public void price() {
         System.out.println("Price is running in Chicken");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

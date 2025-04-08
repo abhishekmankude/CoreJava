@@ -9,4 +9,6 @@ public void color() { System.out.println("Color is running in Pickles Foods"); }
     public void size() { System.out.println("size is running in Pickles Foods"); }
     public void origin() { System.out.println("origin is running in Pickles Foods"); }
     public void price() { System.out.println("price is running in Pickles Foods"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

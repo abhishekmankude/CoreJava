@@ -11,4 +11,6 @@ public void install() { System.out.println("WashingMachine being installed"); }
     public void clean() { System.out.println("WashingMachine being cleaned"); }
     public void maintain() { System.out.println("WashingMachine being maintained"); }
     public void replace() { System.out.println("WashingMachine being replaced"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

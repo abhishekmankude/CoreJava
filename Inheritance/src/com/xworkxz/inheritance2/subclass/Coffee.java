@@ -22,4 +22,7 @@ public class Coffee extends Beverages {
     public void price() {
         System.out.println("Price is running in Coffee");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

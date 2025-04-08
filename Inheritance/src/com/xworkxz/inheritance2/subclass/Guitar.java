@@ -11,4 +11,6 @@ public void play() { System.out.println("Guitar being played"); }
     public void clean() { System.out.println("Guitar being cleaned"); }
     public void store() { System.out.println("Guitar being stored"); }
     public void transport() { System.out.println("Guitar being transported"); }
-}
+    public void country(){
+        System.out.println("Country is Running");
+    }}

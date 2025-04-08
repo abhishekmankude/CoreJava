@@ -10,6 +10,8 @@ public class CannedBeans extends CannedGoods { public CannedBeans() { System.out
     public void size() { System.out.println("size is running in CannedBeans"); }
     public void origin() { System.out.println("origin is running in CannedBeans"); }
     public void price() { System.out.println("price is running in CannedBeans"); }
-
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }
 
