@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Autobiography;
 import com.xworkxz.inheritance2.subclass.Novel;
 import com.xworkxz.inheritance2.superclass.Book;
 
@@ -25,5 +26,11 @@ public class BookRunner {
         novel.bookmark();
         novel.lend();
         novel.shelve();
+
+
+        Autobiography autobiography=new Autobiography();
+        autobiography.range(book);
+        autobiography.range(novel);
+
     }
 }

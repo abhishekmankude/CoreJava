@@ -16,4 +16,7 @@ public class Beverages {
     public void price() {
         System.out.println("Price is running in beverages");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

@@ -11,4 +11,7 @@ public void read() { System.out.println("Novel being read"); }
     public void bookmark() { System.out.println("Novel being bookmarked"); }
     public void lend() { System.out.println("Novel being lent"); }
     public void shelve() { System.out.println("Novel being shelved"); }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

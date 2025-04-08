@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Kola;
 import com.xworkxz.inheritance2.subclass.Coffee;
 import com.xworkxz.inheritance2.superclass.Beverages;
 
@@ -25,5 +26,10 @@ public class BeveragesRunner {
         coffee.brand();
         coffee.ingredients();
         coffee.price();
+
+        Kola kola=new Kola();
+        kola.range(beverages);
+        kola.range(coffee);
+
     }
 }

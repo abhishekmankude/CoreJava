@@ -22,4 +22,7 @@ public class Bread extends Bakery {
     public void price() {
         System.out.println("Price is running in Bread");
     }
+    public void country(){
+        System.out.println("Country is Running");
+    }
 }

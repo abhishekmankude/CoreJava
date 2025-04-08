@@ -1,7 +1,9 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.Bisket;
 import com.xworkxz.inheritance2.subclass.Bread;
 import com.xworkxz.inheritance2.superclass.Bakery;
+import com.xworkz.inheritance1.SubClass.Bike;
 
 public class BakeryRunner {
     public static void main(String[] args) {
@@ -25,5 +27,9 @@ public class BakeryRunner {
         bread.ingredients();
         bread.origin();
         bread.price();
+
+        Bisket bisket=new Bisket();
+        bisket.range(bakery);
+        bisket.range(bread);
     }
 }

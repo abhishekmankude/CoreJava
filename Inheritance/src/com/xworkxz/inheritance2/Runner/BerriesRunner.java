@@ -1,5 +1,6 @@
 package com.xworkxz.inheritance2.Runner;
 
+import com.xworkxz.inheritance2.NewClasses.BlueBerry;
 import com.xworkxz.inheritance2.subclass.Strawberry;
 import com.xworkxz.inheritance2.superclass.Berries;
 
@@ -25,5 +26,10 @@ public class BerriesRunner {
         strawberry.size();
         strawberry.origin();
         strawberry.price();
+
+        BlueBerry blueBerry=new BlueBerry();
+        blueBerry.range(berries);
+        blueBerry.range(strawberry);
+
     }
 }
