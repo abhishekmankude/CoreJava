@@ -117,7 +117,7 @@ public class StringRunner {
         System.out.println(bank);
         System.out.println();
 
-        ATM atm = new ATM("BOB", "Mangalore", 10001);
+        Money atm = new Money("BOB", "Mangalore", 10001);
         System.out.println(atm);
         System.out.println();
 
@@ -145,7 +145,7 @@ public class StringRunner {
         System.out.println(remote);
         System.out.println();
 
-        Battery battery = new Battery("Lithium-ion", "Duracell", 9);
+        Charger battery = new Charger("Lithium-ion", 2, 9);
         System.out.println(battery);
         System.out.println();
 
@@ -393,7 +393,11 @@ public class StringRunner {
         System.out.println(milk);
         System.out.println();
 
-        Apple apple = new Apple("Fuji", 200, 35);
+        Avocado
+
+                apple = new Avocado
+
+                ("Fuji", 200, 35);
         System.out.println(apple);
         System.out.println();
 
@@ -405,7 +409,7 @@ public class StringRunner {
         System.out.println(port);
         System.out.println();
 
-        Adapter adapter = new Adapter("Lenovo", 65, 1200);
+        Charger adapter = new Charger("Lenovo", 65, 1200);
         System.out.println(adapter);
         System.out.println();
 
