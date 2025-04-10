@@ -13,4 +13,11 @@ public class Speaker {
     public String toString() {
         return "Speaker brand " + this.brand + " type " + this.type + " price " + this.price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

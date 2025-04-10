@@ -17,4 +17,11 @@ public class DiningTable {
     }
 
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

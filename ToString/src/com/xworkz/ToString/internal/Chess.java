@@ -15,4 +15,11 @@ public class Chess {
         public String toString() {
             return "Chess board material " + this.boardMaterial + " piece color " + this.pieceColor + " price " + this.price;
         }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

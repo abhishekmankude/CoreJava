@@ -15,4 +15,11 @@ public class Pharmacy {
     public String toString() {
         return "Pharmacy name " + this.name + " location " + this.location + " rating " + this.rating;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

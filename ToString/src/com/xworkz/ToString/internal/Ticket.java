@@ -16,4 +16,11 @@ public class Ticket {
         return "Ticket event " + this.event + " date " + this.date + " price " + this.price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

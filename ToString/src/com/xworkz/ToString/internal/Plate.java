@@ -16,5 +16,12 @@ public class Plate {
         return "Plate material: " + material + ", diameter: " + diameter + "cm, price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 
 }

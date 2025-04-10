@@ -15,4 +15,11 @@ public class Remote {
     public String toString() {
         return "Remote company " + this.company + " color " + this.color + " price " + this.price;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

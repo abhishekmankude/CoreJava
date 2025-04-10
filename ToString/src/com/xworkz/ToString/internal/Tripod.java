@@ -16,4 +16,11 @@ public class Tripod {
         return "Tripod material: " + material + ", max height: " + maxHeight + "cm, price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

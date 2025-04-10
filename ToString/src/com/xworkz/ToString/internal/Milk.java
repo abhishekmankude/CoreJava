@@ -16,5 +16,12 @@ public class Milk {
         return "Milk brand: " +  this.brand + ", volume: " +  this.volume + "ml, price: " +  this.price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 
 }

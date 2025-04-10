@@ -16,4 +16,11 @@ public class Sofa {
         return "Sofa material: " + material + ", seats: " + seats + ", price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
     }

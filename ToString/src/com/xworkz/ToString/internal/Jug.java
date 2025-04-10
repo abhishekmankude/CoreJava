@@ -19,4 +19,11 @@ public class Jug {
         return "Color :"+this.color+", Capacity :"+this.capacity+", Shape :"+this.color;
 
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

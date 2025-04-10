@@ -15,4 +15,11 @@ public class Helmet {
     public String toString() {
         return "Helmet brand: " + brand + ", size: " + size + ", color: " + color;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

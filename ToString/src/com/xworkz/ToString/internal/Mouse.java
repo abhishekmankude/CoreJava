@@ -15,4 +15,11 @@ public class Mouse {
     public String toString() {
         return "Mouse brand " + this.brand + " type " + this.type + " price " + this.price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

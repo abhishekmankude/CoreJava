@@ -15,4 +15,11 @@ public class Port {
     public String toString() {
         return "Port type: " + this.type + ", port number: " + this.number + ", speed: " + this.speed ;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

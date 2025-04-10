@@ -15,4 +15,11 @@ public class Towel {
     public String toString() {
         return "Towel material: " + material + ", color: " + color + ", length: " + length;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

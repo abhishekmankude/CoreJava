@@ -15,4 +15,11 @@ public class Language {
     public String toString() {
         return "Language name "+this.name+" Language used "+this.areaUsed+" Language age "+this.age;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

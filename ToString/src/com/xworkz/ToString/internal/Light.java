@@ -15,4 +15,11 @@ public class Light {
     public String toString() {
         return "Light company "+this.company+" Light cost "+this.cost+" Light Type "+this.type;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

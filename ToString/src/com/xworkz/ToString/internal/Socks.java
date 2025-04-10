@@ -15,4 +15,11 @@ public class Socks {
     public String toString() {
         return "Socks brand " + this.brand + " color " + this.color + " price " + this.price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

@@ -17,4 +17,11 @@ public class Cap {
     }
 
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

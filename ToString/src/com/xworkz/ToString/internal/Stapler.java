@@ -16,4 +16,11 @@ public class Stapler {
         return "Stapler brand: " + brand + ", pinsCapacity: " + pinsCapacity + ", price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

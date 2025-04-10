@@ -19,4 +19,11 @@ public class Malleshwaram {
         return "Shop :"+this.shop+", Purchase :"+this.purchace+", Dress Cost :"+this.dressCost;
 
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

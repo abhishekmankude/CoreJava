@@ -15,4 +15,11 @@ public class Driver {
     public String toString() {
         return "Driver name " + this.name + " license number " + this.licenseNumber + " experience " + this.experience + " years";
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

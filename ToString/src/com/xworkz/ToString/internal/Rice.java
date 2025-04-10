@@ -16,5 +16,12 @@ public class Rice {
         return "Rice type: " + type + ", quantity: " + quantityInKg + "kg, price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }
 

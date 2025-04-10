@@ -15,4 +15,11 @@ public class Pant {
     public String toString() {
         return "Pant brand "+this.brand+" Pant cost "+this.cost+" Pant Color "+this.color;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

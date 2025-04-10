@@ -15,4 +15,11 @@ public class Samosa {
     public String toString() {
         return "Samosa type "+this.type+" Samosa cost "+this.cost+" Samosa shape "+this.shape;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

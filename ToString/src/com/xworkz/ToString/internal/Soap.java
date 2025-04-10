@@ -15,4 +15,11 @@ public class Soap {
     public String toString() {
         return "Soap brand " + this.brand + " type " + this.type + " price " + this.price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

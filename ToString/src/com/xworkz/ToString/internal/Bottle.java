@@ -16,5 +16,12 @@ public class Bottle {
     public String toString() {
         return "Bottle brand " + this.brand + " color " + this.color + " capacity " + this.capacity ;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 
 }

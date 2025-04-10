@@ -15,4 +15,11 @@ public class Wallet {
     public String toString() {
         return "Wallet brand " + this.brand + " material " + this.material + " price " + this.price;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

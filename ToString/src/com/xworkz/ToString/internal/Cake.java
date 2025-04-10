@@ -15,4 +15,11 @@ public class Cake {
     public String toString() {
         return "Cake Bakery Name "+this.bakeryName+" Cake price "+this.price+" Pant flavour "+this.flavour;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

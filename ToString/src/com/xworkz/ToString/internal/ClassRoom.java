@@ -17,5 +17,12 @@ public class ClassRoom {
     {
         return "Name :"+this.name+", Capacity :"+this.capacity+", Location :"+this.location;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 
 }

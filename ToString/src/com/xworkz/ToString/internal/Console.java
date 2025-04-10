@@ -16,4 +16,11 @@ public class Console {
         return "Console name " + this.name + " manufacturer " + this.manufacturer + " price " + this.price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

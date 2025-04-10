@@ -16,4 +16,11 @@ public class ToyCar {
         return "ToyCar color: " + color + ", brand: " + brand + ", price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

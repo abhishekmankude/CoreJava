@@ -15,4 +15,11 @@ public class Printer {
     public String toString() {
         return "Printer brand: " + brand + ", colorPrint: " + colorPrint + ", PPM: " + pagesPerMinute;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

@@ -15,4 +15,11 @@ public class Book {
     public String toString() {
         return "Book brand "+this.company+" Book cost "+this.cost+" Book total Page "+this.noOfPages;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

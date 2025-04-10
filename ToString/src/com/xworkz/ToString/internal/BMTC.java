@@ -15,6 +15,13 @@ public class BMTC {
         public String toString() {
             return "BMTC city "+this.cityName+" BMTC route "+this.route+" Pant MinimumCost "+this.minimumCost;
         }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 
     }
 

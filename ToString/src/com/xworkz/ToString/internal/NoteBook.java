@@ -13,4 +13,11 @@ public class NoteBook {
     public String toString() {
         return "Notebook brand " + this.brand + " pages " + this.pages + " size " + this.size;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

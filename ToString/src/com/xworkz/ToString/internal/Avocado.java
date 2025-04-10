@@ -16,4 +16,12 @@ public class Avocado
     public String toString() {
         return "Apple variety: " +  this.variety + ", weight: " +  this.weight + "g, price: " +  this.price;
     }
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

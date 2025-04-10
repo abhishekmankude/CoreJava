@@ -15,4 +15,11 @@ public class Fan {
     public String toString() {
         return "Fan type "+this.type+" Fan cost "+this.cost+" Fan speed "+this.speed;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

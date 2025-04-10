@@ -15,4 +15,11 @@ public class Lamp {
     public String toString() {
         return "Lamp type " + this.type + " color " + this.color + " price " + this.price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

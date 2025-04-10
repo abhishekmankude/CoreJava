@@ -15,4 +15,11 @@ public class Chapati {
     public String toString() {
         return "Chapati flour type: " +  this.flourType + ", quantity: " +  this.quantity + ", price: " +  this.price;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

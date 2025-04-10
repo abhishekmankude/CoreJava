@@ -16,4 +16,11 @@ public class Mixer {
         return "Mixer brand: " + brand + ", jars: " + jars + ", price: " + price;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

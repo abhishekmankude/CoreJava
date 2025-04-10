@@ -16,4 +16,11 @@ public class IronBox {
     public String toString() {
         return "IronBox brand " + this.brand + " wattage " + this.wattage + " price " + this.price;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

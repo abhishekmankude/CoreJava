@@ -15,4 +15,11 @@ public class Guitar {
     public String toString() {
         return "Guitar type: " + type + ", brand: " + brand + ", price: " + price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}

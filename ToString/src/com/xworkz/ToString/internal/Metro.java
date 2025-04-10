@@ -14,4 +14,11 @@ public class Metro {
     @Override
     public String toString() {
         return "Metro city " + this.city + " line color " + this.lineColor + " ticket price " + this.ticketPrice;
+    }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
     }}

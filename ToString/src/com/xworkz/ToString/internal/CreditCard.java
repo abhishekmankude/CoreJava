@@ -17,4 +17,11 @@ public class CreditCard {
     }
 
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

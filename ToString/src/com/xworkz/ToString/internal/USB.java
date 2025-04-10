@@ -16,4 +16,11 @@ public class USB {
         return "Usb brand: " + brand + " storageCapacity: " + storageCapacity + " type: " + type;
     }
 
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

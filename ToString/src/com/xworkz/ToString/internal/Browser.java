@@ -15,5 +15,12 @@ public class Browser {
     public String toString() {
         return "Browser name: " + this. name + ", version: " +  this.version + ", release year: " +  this.releaseYear;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 
 }

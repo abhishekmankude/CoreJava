@@ -16,4 +16,11 @@ public class Charger {
     public String toString() {
         return "Adapter brand: " + this.brand + ", wattage: " + this.wattage + "W, price: " + this.price;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

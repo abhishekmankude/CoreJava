@@ -15,4 +15,11 @@ public class Coin {
     public String toString() {
         return "Coin denomination " + this.coinName + " material " + this.material + " year " + this.year;
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

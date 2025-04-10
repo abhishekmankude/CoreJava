@@ -15,4 +15,11 @@ public class Mat {
     public String toString() {
         return "Mat material: " + material + ", shape: " + shape + ", thickness: " + thickness + "mm";
     }
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }
 }

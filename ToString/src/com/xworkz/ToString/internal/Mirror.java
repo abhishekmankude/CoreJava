@@ -15,4 +15,11 @@ public class Mirror {
     public String toString() {
         return "Mirror shape: " + shape + ", height: " + height + "cm, price: " + price;
     }
-}
+
+    @Override
+    public int hashCode()
+    {
+        super.hashCode();
+        return 100;
+
+    }}
