@@ -4,13 +4,17 @@ import com.xworkz.ToString.internal.*;
 
 public class StringRunner {
     public static void main(String[] args) {
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         Avocado avacado = new Avocado("Hass", 150, 100);
         System.out.println(avacado);
         System.out.println(avacado.hashCode());
         System.out.println("Original Value "+System.identityHashCode(avacado));
-        System.out.println();
+        Avocado avocado1=new Avocado("Hass",150,100);
+        System.out.println("they are same"+avocado1.equals(avacado));
 
+
+        System.out.println();
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         Bag bag = new Bag("American Tourister", "Navy Blue", 30);
         System.out.println(bag);
         System.out.println(bag.hashCode());

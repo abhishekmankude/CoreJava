@@ -24,4 +24,27 @@ public class Avocado
         return 100;
 
     }
+
+
+    @Override
+    public boolean equals(Object object)
+    {
+        if(object!=null)
+        {
+            System.out.println("rel is not null ");
+            if(object instanceof Avocado)
+            {
+                System.out.println("ref is avacado, will compare...");
+                Avocado avocado=this;
+                Avocado avocado1=(Avocado) object;
+                if(avocado.variety.equals(avocado1.variety) && (avocado.price==avocado1.price) && avocado.weight==avocado1.weight )
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+
+    }
+
 }
