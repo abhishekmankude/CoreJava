@@ -17,10 +17,24 @@ public class Sofa {
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Sofa) {
+                System.out.println("ref is Sofa, will compare...");
+                Sofa sofa = this;
+                Sofa sofa1 = (Sofa) object;
+                if(sofa.material.equals(sofa1.material) && sofa.seats == sofa1.seats && sofa.price == sofa1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
-    }
+}

@@ -1,8 +1,7 @@
 package com.xworkz.ToString.internal;
 
-
 public class Charger {
-    private  String brand;
+    private String brand;
     private int wattage;
     private int price;
 
@@ -14,13 +13,30 @@ public class Charger {
 
     @Override
     public String toString() {
-        return "Adapter brand: " + this.brand + ", wattage: " + this.wattage + "W, price: " + this.price;
+        return "Charger brand: " + this.brand + ", wattage: " + this.wattage + "W, price: " + this.price;
     }
+
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Charger) {
+                System.out.println("ref is Charger, will compare...");
+                Charger charger = this;
+                Charger charger1 = (Charger) object;
+                if(charger.brand.equals(charger1.brand) &&
+                        charger.wattage == charger1.wattage &&
+                        charger.price == charger1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

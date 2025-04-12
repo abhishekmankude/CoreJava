@@ -13,14 +13,28 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket event " + this.event + " date " + this.date + " price " + this.price;
+        return "Ticket event: " + event + ", date: " + date + ", price: " + price;
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Ticket) {
+                System.out.println("ref is Ticket, will compare...");
+                Ticket ticket = this;
+                Ticket ticket1 = (Ticket) object;
+                if(ticket.event.equals(ticket1.event) && ticket.date.equals(ticket1.date) && ticket.price == ticket1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

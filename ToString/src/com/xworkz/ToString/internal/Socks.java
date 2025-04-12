@@ -13,13 +13,28 @@ public class Socks {
 
     @Override
     public String toString() {
-        return "Socks brand " + this.brand + " color " + this.color + " price " + this.price;
+        return "Socks brand: " + brand + ", color: " + color + ", price: " + price;
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
-    }}
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Socks) {
+                System.out.println("ref is Socks, will compare...");
+                Socks socks = this;
+                Socks socks1 = (Socks) object;
+                if(socks.brand.equals(socks1.brand) && socks.color.equals(socks1.color) && socks.price == socks1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}

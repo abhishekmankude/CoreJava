@@ -115,6 +115,8 @@ public class StringRunner {
         System.out.println(chess);
         System.out.println(chess.hashCode());
         System.out.println("Original Value "+System.identityHashCode(chess));
+        Chess chess1=new Chess("plastic","black",1500);
+        System.out.println(chess.equals(chess1));
         System.out.println();
 
         ClassRoom classRoom=new ClassRoom("10th","Mangaluru",45);

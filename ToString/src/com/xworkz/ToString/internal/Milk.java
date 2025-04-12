@@ -13,15 +13,28 @@ public class Milk {
 
     @Override
     public String toString() {
-        return "Milk brand: " +  this.brand + ", volume: " +  this.volume + "ml, price: " +  this.price;
+        return "Milk brand: " + brand + ", volume: " + volume + "ml, price: " + price;
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
-
     }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Milk) {
+                System.out.println("ref is Milk, will compare...");
+                Milk milk = this;
+                Milk milk1 = (Milk) object;
+                if(milk.brand.equals(milk1.brand) && milk.volume == milk1.volume && milk.price == milk1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

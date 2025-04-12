@@ -13,13 +13,28 @@ public class Port {
 
     @Override
     public String toString() {
-        return "Port type: " + this.type + ", port number: " + this.number + ", speed: " + this.speed ;
+        return "Port type: " + type + ", number: " + number + ", speed: " + speed;
     }
+
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Port) {
+                System.out.println("ref is Port, will compare...");
+                Port port = this;
+                Port port1 = (Port) object;
+                if(port.type.equals(port1.type) && port.number == port1.number && port.speed == port1.speed) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

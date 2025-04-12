@@ -13,13 +13,28 @@ public class Soap {
 
     @Override
     public String toString() {
-        return "Soap brand " + this.brand + " type " + this.type + " price " + this.price;
+        return "Soap brand: " + brand + ", type: " + type + ", price: " + price;
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
-    }}
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Soap) {
+                System.out.println("ref is Soap, will compare...");
+                Soap soap = this;
+                Soap soap1 = (Soap) object;
+                if(soap.brand.equals(soap1.brand) && soap.type.equals(soap1.type) && soap.price == soap1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}

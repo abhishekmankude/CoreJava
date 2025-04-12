@@ -15,11 +15,26 @@ public class Mat {
     public String toString() {
         return "Mat material: " + material + ", shape: " + shape + ", thickness: " + thickness + "mm";
     }
+
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Mat) {
+                System.out.println("ref is Mat, will compare...");
+                Mat mat = this;
+                Mat mat1 = (Mat) object;
+                if(mat.material.equals(mat1.material) && mat.shape.equals(mat1.shape) && mat.thickness == mat1.thickness) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

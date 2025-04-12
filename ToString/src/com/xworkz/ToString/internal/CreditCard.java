@@ -13,15 +13,30 @@ public class CreditCard {
 
     @Override
     public String toString() {
-        return "CreditCard bank: " + bankName + ", card number: " + cardNumber + ", credit limit: " + creditLimit;
+        return "CreditCard bank: " + this.bankName + ", card number: " + this.cardNumber + ", credit limit: " + this.creditLimit;
     }
 
-
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof CreditCard) {
+                System.out.println("ref is CreditCard, will compare...");
+                CreditCard card = this;
+                CreditCard card1 = (CreditCard) object;
+                if(card.bankName.equals(card1.bankName) &&
+                        card.cardNumber == card1.cardNumber &&
+                        card.creditLimit == card1.creditLimit) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

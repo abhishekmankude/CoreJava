@@ -17,9 +17,24 @@ public class Mirror {
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
-    }}
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Mirror) {
+                System.out.println("ref is Mirror, will compare...");
+                Mirror mirror = this;
+                Mirror mirror1 = (Mirror) object;
+                if(mirror.shape.equals(mirror1.shape) && mirror.height == mirror1.height && mirror.price == mirror1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}

@@ -17,11 +17,24 @@ public class Rice {
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Rice) {
+                System.out.println("ref is Rice, will compare...");
+                Rice rice = this;
+                Rice rice1 = (Rice) object;
+                if(rice.type.equals(rice1.type) && rice.quantityInKg == rice1.quantityInKg && rice.price == rice1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
-

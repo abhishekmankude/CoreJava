@@ -5,7 +5,7 @@ public class Shoe {
     private int size;
     private int price;
 
-    public Shoe(String brand,int size, int price) {
+    public Shoe(String brand, int size, int price) {
         this.brand = brand;
         this.size = size;
         this.price = price;
@@ -13,13 +13,28 @@ public class Shoe {
 
     @Override
     public String toString() {
-        return "Shoe brand " + this.brand + " Shoe size " + this.size + " Shoe price " + this.price;
+        return "Shoe brand: " + brand + ", size: " + size + ", price: " + price;
     }
+
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Shoe) {
+                System.out.println("ref is Shoe, will compare...");
+                Shoe shoe = this;
+                Shoe shoe1 = (Shoe) object;
+                if(shoe.brand.equals(shoe1.brand) && shoe.size == shoe1.size && shoe.price == shoe1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

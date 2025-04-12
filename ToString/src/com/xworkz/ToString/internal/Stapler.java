@@ -17,10 +17,24 @@ public class Stapler {
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Stapler) {
+                System.out.println("ref is Stapler, will compare...");
+                Stapler stapler = this;
+                Stapler stapler1 = (Stapler) object;
+                if(stapler.brand.equals(stapler1.brand) && stapler.pinsCapacity == stapler1.pinsCapacity && stapler.price == stapler1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

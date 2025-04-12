@@ -13,15 +13,30 @@ public class Cap {
 
     @Override
     public String toString() {
-        return "Cap color: " + color + ", brand: " + brand + ", price: " + price;
+        return "Cap color: " + this.color + ", brand: " + this.brand + ", price: " + this.price;
     }
 
-
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Cap) {
+                System.out.println("ref is Cap, will compare...");
+                Cap cap = this;
+                Cap cap1 = (Cap) object;
+                if(cap.color.equals(cap1.color) &&
+                        cap.brand.equals(cap1.brand) &&
+                        cap.price == cap1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

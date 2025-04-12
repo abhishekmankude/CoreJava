@@ -13,14 +13,30 @@ public class Candle {
 
     @Override
     public String toString() {
-        return "Candle scent: " + scent + ", weight: " + weight + "g, price: " + price;
+        return "Candle scent: " + this.scent + ", weight: " + this.weight + "g, price: " + this.price;
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Candle) {
+                System.out.println("ref is Candle, will compare...");
+                Candle candle = this;
+                Candle candle1 = (Candle) object;
+                if(candle.scent.equals(candle1.scent) &&
+                        candle.weight == candle1.weight &&
+                        candle.price == candle1.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

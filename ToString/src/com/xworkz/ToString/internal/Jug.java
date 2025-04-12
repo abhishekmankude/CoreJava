@@ -5,25 +5,37 @@ public class Jug {
     private int capacity;
     private String shape;
 
-    public Jug(String color,int capacity,String shape)
-    {
-        this.color=color;
-        this.capacity=capacity;
-        this.shape=shape;
-
+    public Jug(String color, int capacity, String shape) {
+        this.color = color;
+        this.capacity = capacity;
+        this.shape = shape;
         System.out.println("no arg const in Jug");
     }
-    @Override
-    public String toString()
-    {
-        return "Color :"+this.color+", Capacity :"+this.capacity+", Shape :"+this.color;
 
-    }
     @Override
-    public int hashCode()
-    {
+    public String toString() {
+        return "Color: " + this.color + ", Capacity: " + this.capacity + ", Shape: " + this.shape;
+    }
+
+    @Override
+    public int hashCode() {
         super.hashCode();
         return 100;
+    }
 
+    @Override
+    public boolean equals(Object object) {
+        if(object != null) {
+            System.out.println("ref is not null");
+            if(object instanceof Jug) {
+                System.out.println("ref is Jug, will compare...");
+                Jug jug = this;
+                Jug jug1 = (Jug) object;
+                if(jug.color.equals(jug1.color) && jug.capacity == jug1.capacity && jug.shape.equals(jug1.shape)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
