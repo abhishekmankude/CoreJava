@@ -2,18 +2,16 @@ package com.xworkz.ToString.internal;
 
 public class Charge {
     private String type;
-    private String company;
-    private int capacity;
+
 
     public Charge(String type, String company, int capacity) {
         this.type = type;
-        this.company = company;
-        this.capacity = capacity;
+
     }
 
     @Override
     public String toString() {
-        return "Charge type: " + this.type + ", company: " + this.company + ", capacity: " + this.capacity + "V";
+        return "Charge type: " + this.type ;
     }
 
     @Override
@@ -30,9 +28,7 @@ public class Charge {
                 System.out.println("ref is Charge, will compare...");
                 Charge charge = this;
                 Charge charge1 = (Charge) object;
-                if(charge.type.equals(charge1.type) &&
-                        charge.company.equals(charge1.company) &&
-                        charge.capacity == charge1.capacity) {
+                if(charge.type.equals(charge1.type)) {
                     return true;
                 }
             }

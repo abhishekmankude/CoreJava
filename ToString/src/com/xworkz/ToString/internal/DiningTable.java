@@ -2,18 +2,16 @@ package com.xworkz.ToString.internal;
 
 public class DiningTable {
     private String shape;
-    private int seats;
-    private int price;
 
-    public DiningTable(String shape, int seats, int price) {
+
+    public DiningTable(String shape) {
         this.shape = shape;
-        this.seats = seats;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "DiningTable shape: " + this.shape + ", seats: " + this.seats + ", price: " + this.price;
+        return "DiningTable shape: " + this.shape + ", seats: " ;
     }
 
     @Override
@@ -30,9 +28,7 @@ public class DiningTable {
                 System.out.println("ref is DiningTable, will compare...");
                 DiningTable table = this;
                 DiningTable table1 = (DiningTable) object;
-                if(table.shape.equals(table1.shape) &&
-                        table.seats == table1.seats &&
-                        table.price == table1.price) {
+                if(table.shape.equals(table1.shape) ) {
                     return true;
                 }
             }

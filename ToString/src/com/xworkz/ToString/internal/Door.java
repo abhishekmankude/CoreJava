@@ -2,18 +2,16 @@ package com.xworkz.ToString.internal;
 
 public class Door {
     private String material;
-    private int height;
-    private int price;
 
-    public Door(String material, int height, int price) {
+
+    public Door(String material) {
         this.material = material;
-        this.height = height;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Door material: " + this.material + ", height: " + this.height + "cm, price: " + this.price;
+        return "Door material: " + this.material + ", height: " ;
     }
 
     @Override
@@ -30,9 +28,7 @@ public class Door {
                 System.out.println("ref is Door, will compare...");
                 Door door = this;
                 Door door1 = (Door) object;
-                if(door.material.equals(door1.material) &&
-                        door.height == door1.height &&
-                        door.price == door1.price) {
+                if(door.material.equals(door1.material)) {
                     return true;
                 }
             }

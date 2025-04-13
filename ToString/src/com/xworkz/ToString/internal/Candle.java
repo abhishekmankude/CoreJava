@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Candle {
     private String scent;
-    private int weight;
-    private int price;
 
-    public Candle(String scent, int weight, int price) {
+    public Candle(String scent) {
         this.scent = scent;
-        this.weight = weight;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Candle scent: " + this.scent + ", weight: " + this.weight + "g, price: " + this.price;
+        return "Candle scent: " + this.scent + ", weight: " ;
     }
 
     @Override
@@ -30,9 +27,8 @@ public class Candle {
                 System.out.println("ref is Candle, will compare...");
                 Candle candle = this;
                 Candle candle1 = (Candle) object;
-                if(candle.scent.equals(candle1.scent) &&
-                        candle.weight == candle1.weight &&
-                        candle.price == candle1.price) {
+                if(candle.scent.equals(candle1.scent) )
+                      {
                     return true;
                 }
             }

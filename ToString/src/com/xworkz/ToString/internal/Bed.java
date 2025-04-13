@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Bed {
     private String type;
-    private String material;
-    private int price;
 
-    public Bed(String type, String material, int price) {
+    public Bed(String type) {
         this.type = type;
-        this.material = material;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Bed type: " + this.type + ", material: " + this.material + ", price: " + this.price;
+        return "Bed type: " ;
     }
 
     @Override
@@ -30,7 +27,7 @@ public class Bed {
                 System.out.println("ref is Bed, will compare...");
                 Bed bed = this;
                 Bed bed1 = (Bed) object;
-                if(bed.type.equals(bed1.type) && bed.material.equals(bed1.material) && bed.price == bed1.price) {
+                if(bed.type.equals(bed1.type) ) {
                     return true;
                 }
             }

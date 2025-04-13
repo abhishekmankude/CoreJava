@@ -2,18 +2,16 @@ package com.xworkz.ToString.internal;
 
 public class Camera {
     private String brand;
-    private int megapixels;
-    private boolean hasFlash;
 
-    public Camera(String brand, int megapixels, boolean hasFlash) {
+
+    public Camera(String brand) {
         this.brand = brand;
-        this.megapixels = megapixels;
-        this.hasFlash = hasFlash;
+
     }
 
     @Override
     public String toString() {
-        return "Camera brand: " + this.brand + ", megapixels: " + this.megapixels + "MP, flash: " + this.hasFlash;
+        return "Camera brand: " + this.brand + ", megapixels: ";
     }
 
     @Override
@@ -30,9 +28,8 @@ public class Camera {
                 System.out.println("ref is Camera, will compare...");
                 Camera camera = this;
                 Camera camera1 = (Camera) object;
-                if(camera.brand.equals(camera1.brand) &&
-                        camera.megapixels == camera1.megapixels &&
-                        camera.hasFlash == camera1.hasFlash) {
+                if(camera.brand.equals(camera1.brand))
+                {
                     return true;
                 }
             }

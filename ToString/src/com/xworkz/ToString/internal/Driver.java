@@ -2,18 +2,16 @@ package com.xworkz.ToString.internal;
 
 public class Driver {
     private String name;
-    private String licenseNumber;
-    private int experience;
 
-    public Driver(String name, String licenseNumber, int experience) {
+
+    public Driver(String name) {
         this.name = name;
-        this.licenseNumber = licenseNumber;
-        this.experience = experience;
+
     }
 
     @Override
     public String toString() {
-        return "Driver name: " + this.name + ", license: " + this.licenseNumber + ", experience: " + this.experience + " years";
+        return "Driver name: " + this.name + ", license: " ;
     }
 
     @Override
@@ -30,9 +28,7 @@ public class Driver {
                 System.out.println("ref is Driver, will compare...");
                 Driver driver = this;
                 Driver driver1 = (Driver) object;
-                if(driver.name.equals(driver1.name) &&
-                        driver.licenseNumber.equals(driver1.licenseNumber) &&
-                        driver.experience == driver1.experience) {
+                if(driver.name.equals(driver1.name)) {
                     return true;
                 }
             }

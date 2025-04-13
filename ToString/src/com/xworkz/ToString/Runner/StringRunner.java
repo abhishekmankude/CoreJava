@@ -6,68 +6,93 @@ public class StringRunner {
     public static void main(String[] args) {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        Bag bag = new Bag("American Tourister", "Navy Blue", 30);
+        Bed bed = new Bed("Platform");
+        System.out.println(bed);
+        System.out.println(bed.hashCode());
+        System.out.println("Original Value " + System.identityHashCode(bed));
+        Bed bed1 = new Bed("Platform");
+        System.out.println("they are same " + bed1.equals(bed));
+        System.out.println();
+
+        Avocado avocado = new Avocado("Hass");
+        System.out.println(avocado);
+        System.out.println(avocado.hashCode());
+        System.out.println("Original Value " + System.identityHashCode(avocado));
+        Avocado avocado1 = new Avocado("Hass");
+        System.out.println("they are same " + avocado1.equals(avocado));
+
+
+        Bag bag = new Bag("American Tourister");
         System.out.println(bag);
         System.out.println(bag.hashCode());
         System.out.println("Original Value "+System.identityHashCode(bag));
-        Bag bag1=new Bag("American Tourister", "Navy Blue", 30);
+        Bag bag1=new Bag("American Tourister");
         System.out.println("they are same"+bag1.equals(bag));
         System.out.println();
 
-        Bank bank = new Bank("SBI", "Mumbai", 500000);
+        Bank bank = new Bank("SBI");
         System.out.println(bank);
         System.out.println(bank.hashCode());
         System.out.println("Original Value "+System.identityHashCode(bank));
-        Bank bank1=new Bank("SBI", "Mumbai", 500000);
+        Bank bank1=new Bank("SBI");
         System.out.println("they are same"+bank1.equals(bank));
         System.out.println();
 
-        Belt belt = new Belt("Allen Solly", "Medium", 799);
+        Belt belt = new Belt("Allen Solly");
         System.out.println(belt);
         System.out.println(belt.hashCode());
         System.out.println("Original Value "+System.identityHashCode(belt));
-        Belt belt1=new Belt("Allen Solly", "Medium", 799);
+        Belt belt1=new Belt("Allen Solly");
         System.out.println("they are same"+belt1.equals(belt));
         System.out.println();
 
-        BMTC bmtc = new BMTC("Bengaluru", "Majestic", 25);
+        BMTC bmtc = new BMTC("Bengaluru");
         System.out.println(bmtc);
         System.out.println(bmtc.hashCode());
         System.out.println("Original Value "+System.identityHashCode(bmtc));
-        BMTC bmtc1=new BMTC("Bengaluru", "Majestic", 25);
+        BMTC bmtc1=new BMTC("Bengaluru");
         System.out.println("they are same"+bmtc1.equals(bmtc));
         System.out.println();
 
-        Book book = new Book("Navneet", 200, 120);
+        Book book = new Book("Navneet");
         System.out.println(book);
         System.out.println(book.hashCode());
         System.out.println("Original Value "+System.identityHashCode(book));
-        Book book1=new Book("Navneet", 200, 120);
+        Book book1=new Book("Navneet");
         System.out.println("they are same"+book1.equals(book));
         System.out.println();
 
-        Bottle bottle = new Bottle("Borosil", "Transparent", 1);
+        Bottle bottle = new Bottle("Borosil");
         System.out.println(bottle);
         System.out.println(bottle.hashCode());
         System.out.println("Original Value "+System.identityHashCode(bottle));
-        Bottle bottle1=new Bottle("Borosil", "Transparent", 1);
+        Bottle bottle1=new Bottle("Borosil");
         System.out.println("they are same"+bottle1.equals(bottle));
         System.out.println();
 
-        Browser browser = new Browser("Firefox", "115.0", 2023);
+        Browser browser = new Browser("Firefox");
         System.out.println(browser);
         System.out.println(browser.hashCode());
         System.out.println("Original Value "+System.identityHashCode(browser));
-        Browser browser1=new Browser("Firefox", "115.0", 2023);
+        Browser browser1=new Browser("Firefox");
         System.out.println("they are same"+browser1.equals(browser));
         System.out.println();
 
-        Cake cake = new Cake("Theobroma", "Red Velvet", 800);
+        Cake cake = new Cake("Theobroma");
         System.out.println(cake);
         System.out.println(cake.hashCode());
         System.out.println("Original Value "+System.identityHashCode(cake));
-        Cake cake1=new Cake("Theobroma", "Red Velvet", 800);
+        Cake cake1=new Cake("Theobroma");
         System.out.println("they are same"+cake1.equals(cake));
+        System.out.println();
+
+
+        Candle candle = new Candle("Lavender");
+        System.out.println(candle);
+        System.out.println(candle.hashCode());
+        System.out.println("Original Value " + System.identityHashCode(candle));
+        Candle candle1 = new Candle("Lavender");
+        System.out.println("they are same " + candle1.equals(candle));
         System.out.println();
 
         Calender calender = new Calender("2024", "Wildlife", 99);
@@ -78,99 +103,99 @@ public class StringRunner {
         System.out.println("they are same"+calender1.equals(calender));
         System.out.println();
 
-        Camera camera = new Camera("Nikon", 32, false);
+        Camera camera = new Camera("Nikon");
         System.out.println(camera);
         System.out.println(camera.hashCode());
         System.out.println("Original Value "+System.identityHashCode(camera));
-        Camera camera1=new Camera("Nikon", 32, false);
+        Camera camera1=new Camera("Nikon");
         System.out.println("they are same"+camera1.equals(camera));
         System.out.println();
 
-        Cap cap = new Cap("Navy", "Adidas", 799);
+        Cap cap = new Cap("Navy");
         System.out.println(cap);
         System.out.println(cap.hashCode());
         System.out.println("Original Value "+System.identityHashCode(cap));
-        Cap cap1=new Cap("Navy", "Adidas", 799);
+        Cap cap1=new Cap("Navy");
         System.out.println("they are same"+cap1.equals(cap));
         System.out.println();
 
-        Charger adapter = new Charger("Apple", 20, 1500);
+        Charger adapter = new Charger("Apple");
         System.out.println(adapter);
         System.out.println(adapter.hashCode());
         System.out.println("Original Value "+System.identityHashCode(adapter));
-        Charger adapter1=new Charger("Apple", 20, 1500);
+        Charger adapter1=new Charger("Apple");
         System.out.println("they are same"+adapter1.equals(adapter));
         System.out.println();
 
-        Charger battery = new Charger("Li-Polymer", 3, 10);
+        Charger battery = new Charger("Li-Polymer");
         System.out.println(battery);
         System.out.println(battery.hashCode());
         System.out.println("Original Value "+System.identityHashCode(battery));
-        Charger battery1=new Charger("Li-Polymer", 3, 10);
+        Charger battery1=new Charger("Li-Polymer");
         System.out.println("they are same"+battery1.equals(battery));
         System.out.println();
 
-        Charger ch = new Charger("OnePlus", 30, 1500);
+        Charger ch = new Charger("OnePlus");
         System.out.println(ch);
         System.out.println(ch.hashCode());
         System.out.println("Original Value "+System.identityHashCode(ch));
-        Charger ch1=new Charger("OnePlus", 30, 1500);
+        Charger ch1=new Charger("OnePlus");
         System.out.println("they are same"+ch1.equals(ch));
         System.out.println();
 
-        Chapati chapati = new Chapati("Multigrain", 15, 75);
+        Chapati chapati = new Chapati("Multigrain");
         System.out.println(chapati);
         System.out.println(chapati.hashCode());
         System.out.println("Original Value "+System.identityHashCode(chapati));
-        Chapati chapati1=new Chapati("Multigrain", 15, 75);
+        Chapati chapati1=new Chapati("Multigrain");
         System.out.println("they are same"+chapati1.equals(chapati));
         System.out.println();
 
-        Chappal chappal = new Chappal("Paragon", "L", 499);
+        Chappal chappal = new Chappal("Paragon");
         System.out.println(chappal);
         System.out.println(chappal.hashCode());
         System.out.println("Original Value "+System.identityHashCode(chappal));
-        Chappal chappal1=new Chappal("Paragon", "L", 499);
+        Chappal chappal1=new Chappal("Paragon");
         System.out.println("they are same"+chappal1.equals(chappal));
         System.out.println();
 
-        Chess chess = new Chess("Staunton", "ebony", 2500);
+        Chess chess = new Chess("Staunton");
         System.out.println(chess);
         System.out.println(chess.hashCode());
         System.out.println("Original Value "+System.identityHashCode(chess));
-        Chess chess1=new Chess("plastic","black",1500);
+        Chess chess1=new Chess("plastic");
         System.out.println("they are same"+chess.equals(chess1));
         System.out.println();
 
-        ClassRoom classRoom=new ClassRoom("10th","Mangaluru",45);
+        ClassRoom classRoom=new ClassRoom("10th");
         System.out.println(classRoom);
         System.out.println(classRoom.hashCode());
         System.out.println("Original Value "+System.identityHashCode(classRoom));
-        ClassRoom classRoom1=new ClassRoom("10th","Mangaluru",45);
+        ClassRoom classRoom1=new ClassRoom("10th");
         System.out.println("they are same"+classRoom1.equals(classRoom));
         System.out.println();
 
-        Clock clock = new Clock("Titan", "Wall", 1299);
+        Clock clock = new Clock("Titan");
         System.out.println(clock);
         System.out.println(clock.hashCode());
         System.out.println("Original Value "+System.identityHashCode(clock));
-        Clock clock1=new Clock("Titan", "Wall", 1299);
+        Clock clock1=new Clock("Titan");
         System.out.println("they are same"+clock1.equals(clock));
         System.out.println();
 
-        Coin coin = new Coin("Rupee", "Silver", 1947);
+        Coin coin = new Coin("Rupee");
         System.out.println(coin);
         System.out.println(coin.hashCode());
         System.out.println("Original Value "+System.identityHashCode(coin));
-        Coin coin1=new Coin("Rupee", "Silver", 1947);
+        Coin coin1=new Coin("Rupee");
         System.out.println("they are same"+coin1.equals(coin));
         System.out.println();
 
-        Console console = new Console("Xbox Series X", "Microsoft", 49999);
+        Console console = new Console("Xbox Series X");
         System.out.println(console);
         System.out.println(console.hashCode());
         System.out.println("Original Value "+System.identityHashCode(console));
-        Console console1=new Console("Xbox Series X", "Microsoft", 49999);
+        Console console1=new Console("Xbox Series X");
         System.out.println("they are same"+console1.equals(console));
         System.out.println();
 
@@ -182,43 +207,43 @@ public class StringRunner {
         System.out.println("they are same"+creditCard1.equals(creditCard));
         System.out.println();
 
-        DiningTable diningTable= new DiningTable("Rectangle", 6, 15000);
+        DiningTable diningTable= new DiningTable("Rectangle");
         System.out.println(diningTable);
         System.out.println(diningTable.hashCode());
         System.out.println("Original Value "+System.identityHashCode(diningTable));
-        DiningTable diningTable1=new DiningTable("Rectangle", 6, 15000);
+        DiningTable diningTable1=new DiningTable("Rectangle");
         System.out.println("they are same"+diningTable1.equals(diningTable));
         System.out.println();
 
-        Door door = new Door("Fiber", 200, 4500);
+        Door door = new Door("Fiber");
         System.out.println(door);
         System.out.println(door.hashCode());
         System.out.println("Original Value "+System.identityHashCode(door));
-        Door door1=new Door("Fiber", 200, 4500);
+        Door door1=new Door("Fiber");
         System.out.println("they are same"+door1.equals(door));
         System.out.println();
 
-        Drone drone = new Drone("DJI", "Mavic", 89999);
+        Drone drone = new Drone("DJI");
         System.out.println(drone);
         System.out.println(drone.hashCode());
         System.out.println("Original Value "+System.identityHashCode(drone));
-        Drone drone1=new Drone("DJI", "Mavic", 89999);
+        Drone drone1=new Drone("DJI");
         System.out.println("they are same"+drone1.equals(drone));
         System.out.println();
 
-        Driver driver = new Driver("Ramesh", "9876543210", 10);
+        Driver driver = new Driver("Ramesh");
         System.out.println(driver);
         System.out.println(driver.hashCode());
         System.out.println("Original Value "+System.identityHashCode(driver));
-        Driver driver1=new Driver("Ramesh", "9876543210", 10);
+        Driver driver1=new Driver("Ramesh");
         System.out.println("they are same"+driver1.equals(driver));
         System.out.println();
 
-        Dustbin bin = new Dustbin("Metal", 20, "Silver");
+        Dustbin bin = new Dustbin("Metal");
         System.out.println(bin);
         System.out.println(bin.hashCode());
         System.out.println("Original Value "+System.identityHashCode(bin));
-        Dustbin bin1=new Dustbin("Metal", 20, "Silver");
+        Dustbin bin1=new Dustbin("Metal");
         System.out.println("they are same"+bin1.equals(bin));
         System.out.println();
 

@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Chapati {
     private String flourType;
-    private int quantity;
-    private int price;
 
-    public Chapati(String flourType, int quantity, int price) {
+    public Chapati(String flourType) {
         this.flourType = flourType;
-        this.quantity = quantity;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Chapati flour type: " + this.flourType + ", quantity: " + this.quantity + ", price: " + this.price;
+        return "Chapati flour type: " + this.flourType ;
     }
 
     @Override
@@ -30,9 +27,7 @@ public class Chapati {
                 System.out.println("ref is Chapati, will compare...");
                 Chapati chapati = this;
                 Chapati chapati1 = (Chapati) object;
-                if(chapati.flourType.equals(chapati1.flourType) &&
-                        chapati.quantity == chapati1.quantity &&
-                        chapati.price == chapati1.price) {
+                if(chapati.flourType.equals(chapati1.flourType)) {
                     return true;
                 }
             }

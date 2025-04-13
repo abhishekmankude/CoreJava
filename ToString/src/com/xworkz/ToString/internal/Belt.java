@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Belt {
     private String material;
-    private String size;
-    private int price;
 
-    public Belt(String material, String size, int price) {
+    public Belt(String material) {
         this.material = material;
-        this.size = size;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Belt material: " + this.material + ", size: " + this.size + ", price: " + this.price;
+        return "Belt material: " + this.material ;
     }
 
     @Override
@@ -30,7 +27,7 @@ public class Belt {
                 System.out.println("ref is Belt, will compare...");
                 Belt belt = this;
                 Belt belt1 = (Belt) object;
-                if(belt.material.equals(belt1.material) && belt.size.equals(belt1.size) && belt.price == belt1.price) {
+                if(belt.material.equals(belt1.material)) {
                     return true;
                 }
             }

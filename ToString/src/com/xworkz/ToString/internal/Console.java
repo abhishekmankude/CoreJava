@@ -2,18 +2,16 @@ package com.xworkz.ToString.internal;
 
 public class Console {
     private String name;
-    private String manufacturer;
-    private int price;
 
-    public Console(String name, String manufacturer, int price) {
+
+    public Console(String name) {
         this.name = name;
-        this.manufacturer = manufacturer;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Console name: " + this.name + ", manufacturer: " + this.manufacturer + ", price: " + this.price;
+        return "Console name: " + this.name + ", manufacturer: ";
     }
 
     @Override
@@ -30,9 +28,7 @@ public class Console {
                 System.out.println("ref is Console, will compare...");
                 Console console = this;
                 Console console1 = (Console) object;
-                if(console.name.equals(console1.name) &&
-                        console.manufacturer.equals(console1.manufacturer) &&
-                        console.price == console1.price) {
+                if(console.name.equals(console1.name)) {
                     return true;
                 }
             }

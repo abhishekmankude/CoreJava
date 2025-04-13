@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Cap {
     private String color;
-    private String brand;
-    private int price;
 
-    public Cap(String color, String brand, int price) {
+    public Cap(String color) {
         this.color = color;
-        this.brand = brand;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Cap color: " + this.color + ", brand: " + this.brand + ", price: " + this.price;
+        return "Cap color: " + this.color + ", brand: ";
     }
 
     @Override
@@ -30,9 +27,8 @@ public class Cap {
                 System.out.println("ref is Cap, will compare...");
                 Cap cap = this;
                 Cap cap1 = (Cap) object;
-                if(cap.color.equals(cap1.color) &&
-                        cap.brand.equals(cap1.brand) &&
-                        cap.price == cap1.price) {
+                if(cap.color.equals(cap1.color))
+                        {
                     return true;
                 }
             }

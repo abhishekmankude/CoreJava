@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Chappal {
     private String brand;
-    private String size;
-    private int price;
 
-    public Chappal(String brand, String size, int price) {
+    public Chappal(String brand) {
         this.brand = brand;
-        this.size = size;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Chappal brand: " + this.brand + ", size: " + this.size + ", price: " + this.price;
+        return "Chappal brand: " + this.brand ;
     }
 
     @Override
@@ -30,9 +27,7 @@ public class Chappal {
                 System.out.println("ref is Chappal, will compare...");
                 Chappal chappal = this;
                 Chappal chappal1 = (Chappal) object;
-                if(chappal.brand.equals(chappal1.brand) &&
-                        chappal.size.equals(chappal1.size) &&
-                        chappal.price == chappal1.price) {
+                if(chappal.brand.equals(chappal1.brand) ) {
                     return true;
                 }
             }

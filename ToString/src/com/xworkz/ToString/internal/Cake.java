@@ -2,18 +2,15 @@ package com.xworkz.ToString.internal;
 
 public class Cake {
     private String bakeryName;
-    private String flavour;
-    private int price;
 
-    public Cake(String bakeryName, String flavour, int price) {
+    public Cake(String bakeryName) {
         this.bakeryName = bakeryName;
-        this.flavour = flavour;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Cake bakery: " + this.bakeryName + ", flavour: " + this.flavour + ", price: " + this.price;
+        return "Cake bakery: " + this.bakeryName ;
     }
 
     @Override
@@ -30,7 +27,7 @@ public class Cake {
                 System.out.println("ref is Cake, will compare...");
                 Cake cake = this;
                 Cake cake1 = (Cake) object;
-                if(cake.bakeryName.equals(cake1.bakeryName) && cake.flavour.equals(cake1.flavour) && cake.price == cake1.price) {
+                if(cake.bakeryName.equals(cake1.bakeryName) ) {
                     return true;
                 }
             }

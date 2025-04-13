@@ -2,18 +2,17 @@ package com.xworkz.ToString.internal;
 
 public class Bottle {
     private String brand;
-    private String color;
-    private int capacity;
+//    private String color;
+//    private int capacity;
 
-    public Bottle(String brand, String color, int capacity) {
+    public Bottle(String brand) {
         this.brand = brand;
-        this.color = color;
-        this.capacity = capacity;
+
     }
 
     @Override
     public String toString() {
-        return "Bottle brand: " + this.brand + ", color: " + this.color + ", capacity: " + this.capacity + "ml";
+        return "Bottle brand: " + this.brand ;
     }
 
     @Override
@@ -30,7 +29,7 @@ public class Bottle {
                 System.out.println("ref is Bottle, will compare...");
                 Bottle bottle = this;
                 Bottle bottle1 = (Bottle) object;
-                if(bottle.brand.equals(bottle1.brand) && bottle.color.equals(bottle1.color) && bottle.capacity == bottle1.capacity) {
+                if(bottle.brand.equals(bottle1.brand)) {
                     return true;
                 }
             }
