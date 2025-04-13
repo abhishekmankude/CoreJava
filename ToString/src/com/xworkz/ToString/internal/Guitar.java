@@ -3,17 +3,16 @@ package com.xworkz.ToString.internal;
 public class Guitar {
     private String type;
     private String brand;
-    private int price;
 
-    public Guitar(String type, String brand, int price) {
+
+    public Guitar(String type, String brand) {
         this.type = type;
         this.brand = brand;
-        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Guitar type: " + this.type + ", brand: " + this.brand + ", price: " + this.price;
+        return "Guitar type: " + this.type + ", brand: " + this.brand ;
     }
 
     @Override
@@ -31,8 +30,7 @@ public class Guitar {
                 Guitar guitar = this;
                 Guitar guitar1 = (Guitar) object;
                 if(guitar.type.equals(guitar1.type) &&
-                        guitar.brand.equals(guitar1.brand) &&
-                        guitar.price == guitar1.price) {
+                        guitar.brand.equals(guitar1.brand)) {
                     return true;
                 }
             }

@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Mouse {
     private String brand;
     private String type;
-    private int price;
 
-    public Mouse(String brand, String type, int price) {
+
+    public Mouse(String brand, String type) {
         this.brand = brand;
         this.type = type;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Mouse brand: " + brand + ", type: " + type + ", price: " + price;
+        return "Mouse brand: " + brand + ", type: " + type ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Mouse {
                 System.out.println("ref is Mouse, will compare...");
                 Mouse mouse = this;
                 Mouse mouse1 = (Mouse) object;
-                if(mouse.brand.equals(mouse1.brand) && mouse.type.equals(mouse1.type) && mouse.price == mouse1.price) {
+                if(mouse.brand.equals(mouse1.brand) && mouse.type.equals(mouse1.type)) {
                     return true;
                 }
             }

@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Marker {
     private String color;
     private String brand;
-    private int price;
 
-    public Marker(String color, String brand, int price) {
+
+    public Marker(String color, String brand) {
         this.color = color;
         this.brand = brand;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Marker color: " + color + ", brand: " + brand + ", price: " + price;
+        return "Marker color: " + color + ", brand: " + brand ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Marker {
                 System.out.println("ref is Marker, will compare...");
                 Marker marker = this;
                 Marker marker1 = (Marker) object;
-                if(marker.color.equals(marker1.color) && marker.brand.equals(marker1.brand) && marker.price == marker1.price) {
+                if(marker.color.equals(marker1.color) && marker.brand.equals(marker1.brand)) {
                     return true;
                 }
             }

@@ -3,17 +3,16 @@ package com.xworkz.ToString.internal;
 public class Facewash {
     private String brand;
     private int volume;
-    private int price;
 
-    public Facewash(String brand, int volume, int price) {
+
+    public Facewash(String brand, int volume) {
         this.brand = brand;
         this.volume = volume;
-        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Facewash brand: " + this.brand + ", volume: " + this.volume + "ml, price: " + this.price;
+        return "Facewash brand: " + this.brand + ", volume: " + this.volume ;
     }
 
     @Override
@@ -31,8 +30,7 @@ public class Facewash {
                 Facewash facewash = this;
                 Facewash facewash1 = (Facewash) object;
                 if(facewash.brand.equals(facewash1.brand) &&
-                        facewash.volume == facewash1.volume &&
-                        facewash.price == facewash1.price) {
+                        facewash.volume == facewash1.volume) {
                     return true;
                 }
             }

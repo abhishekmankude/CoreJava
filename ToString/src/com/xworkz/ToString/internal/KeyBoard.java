@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class KeyBoard {
     private String brand;
     private int noOfKeys;
-    private int price;
 
-    public KeyBoard(String brand, int noOfKeys, int price) {
+
+    public KeyBoard(String brand, int noOfKeys) {
         this.brand = brand;
         this.noOfKeys = noOfKeys;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Keyboard brand: " + this.brand + ", noOfKeys: " + this.noOfKeys + ", price: " + this.price;
+        return "Keyboard brand: " + this.brand + ", noOfKeys: " + this.noOfKeys ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class KeyBoard {
                 System.out.println("ref is KeyBoard, will compare...");
                 KeyBoard kb = this;
                 KeyBoard kb1 = (KeyBoard) object;
-                if(kb.brand.equals(kb1.brand) && kb.noOfKeys == kb1.noOfKeys && kb.price == kb1.price) {
+                if(kb.brand.equals(kb1.brand) && kb.noOfKeys == kb1.noOfKeys ) {
                     return true;
                 }
             }

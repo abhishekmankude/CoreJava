@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Jet {
     private String model;
     private int speed;
-    private int capacity;
 
-    public Jet(String model, int speed, int capacity) {
+
+    public Jet(String model, int speed) {
         this.model = model;
         this.speed = speed;
-        this.capacity = capacity;
+
     }
 
     @Override
     public String toString() {
-        return "Jet model: " + this.model + ", speed: " + this.speed + " km/h, capacity: " + this.capacity + " passengers";
+        return "Jet model: " + this.model + ", speed: " + this.speed ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Jet {
                 System.out.println("ref is Jet, will compare...");
                 Jet jet = this;
                 Jet jet1 = (Jet) object;
-                if(jet.model.equals(jet1.model) && jet.speed == jet1.speed && jet.capacity == jet1.capacity) {
+                if(jet.model.equals(jet1.model) && jet.speed == jet1.speed) {
                     return true;
                 }
             }

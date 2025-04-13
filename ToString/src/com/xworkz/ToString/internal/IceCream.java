@@ -3,17 +3,16 @@ package com.xworkz.ToString.internal;
 public class IceCream {
     private String brand;
     private String flavour;
-    private int cost;
 
-    public IceCream(String brand,String flavour,int cost){
+
+    public IceCream(String brand,String flavour){
         this.brand=brand;
         this.flavour=flavour;
-        this.cost=cost;
     }
 
     @Override
     public String toString() {
-        return "Icecream brand "+this.brand+" IceCream cost "+this.cost+" Icecream flavour "+this.flavour;
+        return "Icecream brand "+this.brand+" Icecream flavour "+this.flavour;
     }
 
     @Override
@@ -31,7 +30,7 @@ public class IceCream {
                 System.out.println("ref is IceCream, will compare...");
                 IceCream ice = this;
                 IceCream ice1 = (IceCream) object;
-                if(ice.brand.equals(ice1.brand) && ice.flavour.equals(ice1.flavour) && ice.cost == ice1.cost) {
+                if(ice.brand.equals(ice1.brand) && ice.flavour.equals(ice1.flavour)) {
                     return true;
                 }
             }

@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Lamp {
     private String type;
     private String color;
-    private int price;
 
-    public Lamp(String type, String color, int price) {
+
+    public Lamp(String type, String color) {
         this.type = type;
         this.color = color;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Lamp type " + this.type + " color " + this.color + " price " + this.price;
+        return "Lamp type " + this.type + " color " + this.color ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Lamp {
                 System.out.println("ref is Lamp, will compare...");
                 Lamp lamp = this;
                 Lamp lamp1 = (Lamp) object;
-                if(lamp.type.equals(lamp1.type) && lamp.color.equals(lamp1.color) && lamp.price == lamp1.price) {
+                if(lamp.type.equals(lamp1.type) && lamp.color.equals(lamp1.color) ) {
                     return true;
                 }
             }

@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Laptop {
     private String brand;
     private String processor;
-    private int price;
 
-    public Laptop(String brand, String processor, int price) {
+
+    public Laptop(String brand, String processor) {
         this.brand = brand;
         this.processor = processor;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Laptop brand " + this.brand + " processor " + this.processor + " Laptop Price " + this.price;
+        return "Laptop brand " + this.brand + " processor " + this.processor;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Laptop {
                 System.out.println("ref is Laptop, will compare...");
                 Laptop lap = this;
                 Laptop lap1 = (Laptop) object;
-                if(lap.brand.equals(lap1.brand) && lap.processor.equals(lap1.processor) && lap.price == lap1.price) {
+                if(lap.brand.equals(lap1.brand) && lap.processor.equals(lap1.processor)) {
                     return true;
                 }
             }
