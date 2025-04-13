@@ -3,17 +3,20 @@ package com.xworkz.ToString.internal;
 public class Language {
     private String name;
     private String areaUsed;
-    private int age;
+
 
     public Language(String name,String areaUsed,int age){
         this.name=name;
         this.areaUsed=areaUsed;
-        this.age=age;
+
+    }
+
+    public Language(String kannada, String bangalore) {
     }
 
     @Override
     public String toString() {
-        return "Language name "+this.name+" Language used "+this.areaUsed+" Language age "+this.age;
+        return "Language name "+this.name+" Language used "+this.areaUsed;
     }
 
     @Override
@@ -30,7 +33,7 @@ public class Language {
                 System.out.println("ref is Language, will compare...");
                 Language lang = this;
                 Language lang1 = (Language) object;
-                if(lang.name.equals(lang1.name) && lang.areaUsed.equals(lang1.areaUsed) && lang.age == lang1.age) {
+                if(lang.name.equals(lang1.name) && lang.areaUsed.equals(lang1.areaUsed)) {
                     return true;
                 }
             }

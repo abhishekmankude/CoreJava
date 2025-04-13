@@ -3,17 +3,20 @@ package com.xworkz.ToString.internal;
 public class Mat {
     private String material;
     private String shape;
-    private int thickness;
+
 
     public Mat(String material, String shape, int thickness) {
         this.material = material;
         this.shape = shape;
-        this.thickness = thickness;
+
+    }
+
+    public Mat(String yoga, String blue) {
     }
 
     @Override
     public String toString() {
-        return "Mat material: " + material + ", shape: " + shape + ", thickness: " + thickness + "mm";
+        return "Mat material: " + material + ", shape: " + shape ;
     }
 
     @Override
@@ -30,7 +33,7 @@ public class Mat {
                 System.out.println("ref is Mat, will compare...");
                 Mat mat = this;
                 Mat mat1 = (Mat) object;
-                if(mat.material.equals(mat1.material) && mat.shape.equals(mat1.shape) && mat.thickness == mat1.thickness) {
+                if(mat.material.equals(mat1.material) && mat.shape.equals(mat1.shape)) {
                     return true;
                 }
             }

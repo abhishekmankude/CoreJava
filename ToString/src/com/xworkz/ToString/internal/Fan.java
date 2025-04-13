@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Fan {
     private String type;
     private int cost;
-    private int speed;
 
-    public Fan(String type, int cost, int speed) {
+
+    public Fan(String type, int cost) {
         this.type = type;
         this.cost = cost;
-        this.speed = speed;
+
     }
 
     @Override
     public String toString() {
-        return "Fan type: " + this.type + ", cost: " + this.cost + ", speed: " + this.speed + " RPM";
+        return "Fan type: " + this.type + ", cost: " + this.cost + ", speed: " ;
     }
 
     @Override
@@ -31,8 +31,7 @@ public class Fan {
                 Fan fan = this;
                 Fan fan1 = (Fan) object;
                 if(fan.type.equals(fan1.type) &&
-                        fan.cost == fan1.cost &&
-                        fan.speed == fan1.speed) {
+                        fan.cost == fan1.cost) {
                     return true;
                 }
             }

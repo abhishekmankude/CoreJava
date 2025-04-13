@@ -3,10 +3,10 @@ package com.xworkz.ToString.internal;
 public class Malleshwaram {
     private String shop;
     private String purchace;
-    private int dressCost;
 
-    public Malleshwaram(String shop, String purchace, int dressCost) {
-        this.dressCost = dressCost;
+
+    public Malleshwaram(String shop, String purchace) {
+
         this.shop = shop;
         this.purchace = purchace;
         System.out.println("No arg const of Malleshwaram");
@@ -14,7 +14,7 @@ public class Malleshwaram {
 
     @Override
     public String toString() {
-        return "Shop :" + this.shop + ", Purchase :" + this.purchace + ", Dress Cost :" + this.dressCost;
+        return "Shop :" + this.shop + ", Purchase :" + this.purchace ;
     }
 
     @Override
@@ -31,8 +31,7 @@ public class Malleshwaram {
                 System.out.println("ref is Malleshwaram, will compare...");
                 Malleshwaram m = (Malleshwaram) object;
                 return this.shop.equals(m.shop) &&
-                        this.purchace.equals(m.purchace) &&
-                        this.dressCost == m.dressCost;
+                        this.purchace.equals(m.purchace);
             }
         }
         return false;

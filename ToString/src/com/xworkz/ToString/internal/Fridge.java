@@ -3,17 +3,16 @@ package com.xworkz.ToString.internal;
 public class Fridge {
     private String brand;
     private int capacity;
-    private int price;
 
-    public Fridge(String brand, int capacity, int price) {
+    public Fridge(String brand, int capacity) {
         this.brand = brand;
         this.capacity = capacity;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Fridge brand: " + this.brand + ", capacity: " + this.capacity + "L, price: " + this.price;
+        return "Fridge brand: " + this.brand + ", capacity: " + this.capacity ;
     }
 
     @Override
@@ -31,8 +30,7 @@ public class Fridge {
                 Fridge fridge = this;
                 Fridge fridge1 = (Fridge) object;
                 if(fridge.brand.equals(fridge1.brand) &&
-                        fridge.capacity == fridge1.capacity &&
-                        fridge.price == fridge1.price) {
+                        fridge.capacity == fridge1.capacity) {
                     return true;
                 }
             }

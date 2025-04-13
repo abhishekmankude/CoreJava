@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class NoteBook {
     private String brand;
     private int pages;
-    private String size;
 
-    public NoteBook(String brand, int pages, String size) {
+
+    public NoteBook(String brand, int pages) {
         this.brand = brand;
         this.pages = pages;
-        this.size = size;
+
     }
 
     @Override
     public String toString() {
-        return "Notebook brand " + this.brand + " pages " + this.pages + " size " + this.size;
+        return "Notebook brand " + this.brand + " pages " + this.pages ;
     }
 
     @Override
@@ -30,8 +30,7 @@ public class NoteBook {
                 System.out.println("ref is NoteBook, will compare...");
                 NoteBook noteBook = (NoteBook) object;
                 return this.brand.equals(noteBook.brand) &&
-                        this.pages == noteBook.pages &&
-                        this.size.equals(noteBook.size);
+                        this.pages == noteBook.pages;
             }
         }
         return false;

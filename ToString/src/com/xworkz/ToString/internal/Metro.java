@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Metro {
     private String city;
     private String lineColor;
-    private int ticketPrice;
 
-    public Metro(String city, String lineColor, int ticketPrice) {
+
+    public Metro(String city, String lineColor) {
         this.city = city;
         this.lineColor = lineColor;
-        this.ticketPrice = ticketPrice;
+
     }
 
     @Override
     public String toString() {
-        return "Metro city: " + city + ", line color: " + lineColor + ", ticket price: " + ticketPrice;
+        return "Metro city: " + city + ", line color: " + lineColor ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Metro {
                 System.out.println("ref is Metro, will compare...");
                 Metro metro = this;
                 Metro metro1 = (Metro) object;
-                if(metro.city.equals(metro1.city) && metro.lineColor.equals(metro1.lineColor) && metro.ticketPrice == metro1.ticketPrice) {
+                if(metro.city.equals(metro1.city) && metro.lineColor.equals(metro1.lineColor)) {
                     return true;
                 }
             }

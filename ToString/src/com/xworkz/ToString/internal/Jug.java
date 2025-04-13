@@ -3,18 +3,21 @@ package com.xworkz.ToString.internal;
 public class Jug {
     private String color;
     private int capacity;
-    private String shape;
+
 
     public Jug(String color, int capacity, String shape) {
         this.color = color;
         this.capacity = capacity;
-        this.shape = shape;
+
         System.out.println("no arg const in Jug");
+    }
+
+    public Jug(String red, int capacity) {
     }
 
     @Override
     public String toString() {
-        return "Color: " + this.color + ", Capacity: " + this.capacity + ", Shape: " + this.shape;
+        return "Color: " + this.color + ", Capacity: " + this.capacity ;
     }
 
     @Override
@@ -31,7 +34,7 @@ public class Jug {
                 System.out.println("ref is Jug, will compare...");
                 Jug jug = this;
                 Jug jug1 = (Jug) object;
-                if(jug.color.equals(jug1.color) && jug.capacity == jug1.capacity && jug.shape.equals(jug1.shape)) {
+                if(jug.color.equals(jug1.color) && jug.capacity == jug1.capacity ) {
                     return true;
                 }
             }

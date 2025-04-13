@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Ipl {
     private String teamName;
     private String captain;
-    private int wins;
 
-    public Ipl(String teamName, String captain, int wins) {
+
+    public Ipl(String teamName, String captain) {
         this.teamName = teamName;
         this.captain = captain;
-        this.wins = wins;
+
     }
 
     @Override
     public String toString() {
-        return "IPL Team: " + teamName + ", Captain: " + captain + ", Wins: " + wins;
+        return "IPL Team: " + teamName + ", Captain: " + captain ;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Ipl {
                 System.out.println("ref is Ipl, will compare...");
                 Ipl ipl = this;
                 Ipl ipl1 = (Ipl) object;
-                if(ipl.teamName.equals(ipl1.teamName) && ipl.captain.equals(ipl1.captain) && ipl.wins == ipl1.wins) {
+                if(ipl.teamName.equals(ipl1.teamName) && ipl.captain.equals(ipl1.captain)) {
                     return true;
                 }
             }

@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Mixer {
     private String brand;
     private int jars;
-    private int price;
 
-    public Mixer(String brand, int jars, int price) {
+
+    public Mixer(String brand, int jars) {
         this.brand = brand;
         this.jars = jars;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Mixer brand: " + brand + ", jars: " + jars + ", price: " + price;
+        return "Mixer brand: " + brand + ", jars: " + jars ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Mixer {
                 System.out.println("ref is Mixer, will compare...");
                 Mixer mixer = this;
                 Mixer mixer1 = (Mixer) object;
-                if(mixer.brand.equals(mixer1.brand) && mixer.jars == mixer1.jars && mixer.price == mixer1.price) {
+                if(mixer.brand.equals(mixer1.brand) && mixer.jars == mixer1.jars) {
                     return true;
                 }
             }

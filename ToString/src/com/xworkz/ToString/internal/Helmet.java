@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Helmet {
     private String brand;
     private String size;
-    private String color;
 
-    public Helmet(String brand, String size, String color) {
+
+    public Helmet(String brand, String size) {
         this.brand = brand;
         this.size = size;
-        this.color = color;
+
     }
 
     @Override
     public String toString() {
-        return "Helmet brand: " + this.brand + ", size: " + this.size + ", color: " + this.color;
+        return "Helmet brand: " + this.brand + ", size: " + this.size ;
     }
 
     @Override
@@ -31,8 +31,7 @@ public class Helmet {
                 Helmet helmet = this;
                 Helmet helmet1 = (Helmet) object;
                 if(helmet.brand.equals(helmet1.brand) &&
-                        helmet.size.equals(helmet1.size) &&
-                        helmet.color.equals(helmet1.color)) {
+                        helmet.size.equals(helmet1.size)) {
                     return true;
                 }
             }

@@ -3,17 +3,17 @@ package com.xworkz.ToString.internal;
 public class Mobile {
     private String brand;
     private String model;
-    private int price;
+
 
     public Mobile(String brand, String model, int price) {
         this.brand = brand;
         this.model = model;
-        this.price = price;
+
     }
 
     @Override
     public String toString() {
-        return "Mobile brand: " + brand + ", model: " + model + ", price: " + price;
+        return "Mobile brand: " + brand + ", model: " + model ;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Mobile {
                 System.out.println("ref is Mobile, will compare...");
                 Mobile mobile = this;
                 Mobile mobile1 = (Mobile) object;
-                if(mobile.brand.equals(mobile1.brand) && mobile.model.equals(mobile1.model) && mobile.price == mobile1.price) {
+                if(mobile.brand.equals(mobile1.brand) && mobile.model.equals(mobile1.model)) {
                     return true;
                 }
             }
