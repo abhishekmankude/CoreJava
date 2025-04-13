@@ -14,7 +14,7 @@ public class Money {
 
     @Override
     public String toString() {
-        return "ATM bank: " + bankName + ", location: " + location ;
+        return "ATM bank: " + bankName + ", l ocation: " + location ;
     }
 
     @Override
