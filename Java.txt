@@ -1,0 +1,41 @@
+final 
+class:cannot extend ;wrapper class
+var:cnt change the ref;local instance static
+method ;cannot override
+
+
+abstract
+keyword; just a thoughts not a reality; incomplete thought
+if a class is not complete and we want to add some functionality in future
+used in class and method
+ex:
+puvlic abstract class Demo{
+it has 11 methods 
+can use as car or parent(inherit) ;cannot crate instance in runner;
+abstract calss hav constructor;but i cant use in new keyword
+it means v can do only chaining but cant create copy bcz its abstract or incomplete
+
+v can complete the abstract clas  using sub class
+now i can create instance or create a copy
+
+abstract mehods do not hav body and ens in semicolon
+and need to be overridden in subclass only then only we can call in runner
+abstract cannot declasre as private
+
+if v declare method as abstract we nedd to do class as abstract
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
