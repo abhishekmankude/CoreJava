@@ -18,7 +18,7 @@ public class AbstractRunner {
         lux.fragrance();
         lux.ingredients();
 
-        Cello cello = new Cello("steel",500,"grey");
+        Cello cello = new Cello("steelv ",500,"grey");
         cello.fill();
 
         CoconutOil coconutOil = new CoconutOil("Coconut", 500, "Parachute", 150.0);
