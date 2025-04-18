@@ -24,14 +24,136 @@ abstract cannot declasre as private
 
 if v declare method as abstract we nedd to do class as abstract
 
+--------------16/04/2025-------------------------------
+
+ the ways to create an object
+
+Using the new Keyword
+This is the most common and straightforward way.
+MyClass obj = new MyClass();
+
+Using clone() Method
+Creates a copy of an existing object. The class must implement the Cloneable interface.
+
+MyClass obj1 = new MyClass();
+MyClass obj2 = (MyClass) obj1.clone();
+
+---------------------------------------------------
+What is hashCode in Java?
+
+It is a method in the Object class.
+
+Its return type is int.
+
+It gives a unique integer value representing the memory address or identity of the object (not the actual address but a hashed value).
+
+It is commonly used in hash-based collections like HashMap, HashSet, and Hashtable.
+
+The general contract of hashCode() is: if two objects are equal using equals(), they must return the same hash code.
+
+ex:
+
+class MyClass {
+    int id;
+    String name;
+
+    MyClass(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    
+    public static void main(String[] args) {
+        MyClass obj1 = new MyClass(1, "Abhi");
+        MyClass obj2 = new MyClass(2, "Raj");
+
+        System.out.println("HashCode of obj1: " + obj1.hashCode());
+        System.out.println("HashCode of obj2: " + obj2.hashCode());
+    }
+}
+ 
+-----------------------------------------------------
+What is a package in Java?
+It is a folder used to organize code properly.
+
+Packages help in grouping related classes, interfaces, and sub-packages together.
+
+As there are different files for different code, we can easily retrieve and manage them.
+
+It avoids name conflicts and makes the project more readable and maintainable.
+
+For example:
+OldSongs, NewSongs, Pop, Rock – each folder (package) contains related songs (classes).
+
+So we can easily access and manage them.
+-------------------------------------------------------------
+
+👉 package com.xworkz.animal;
+This line is a package declaration in Java, and it means the class belongs to the com.xworkz.animal package.
+
+Now let's explain each term in this:
+
+🔹 package
+This is a keyword in Java.
+
+It is used to declare the package a particular class belongs to.
+
+It must be the first non-comment line in the Java file.
+
+"It must be the first non-comment line in the Java file" means:
+When you write Java code, the package statement must come before anything else in your .java file except comments.
+
+🔹 com.xworkz.animal
+This is the name of the package. It’s a hierarchical structure (multi-level) and helps in organizing the code like a folder structure.
+
+Let’s break this down further:
+
+🔸 com
+root folder
+It's the top-level domain in the package name.
+
+By Java naming convention, this usually stands for "commercial".
+
+Used as the root to avoid name conflicts globally.
+
+🧠 In real projects, it is recommended to use your domain name in reverse to create unique packages.
+
+Example: If the company website is xworkz.com, then we reverse it to com.xworkz.
+
+🔸 xworkz
+This is the organization or company name.
+
+It represents that this package belongs to Xworkz company or training center.
+
+🔸 animal
+This is the specific module or category within the project.
+
+It means the package is related to animal-related classes, like Dog, Cat, etc.
+
+-------------------------------------------------------------------------------------
 
 
 
+import can be many but package can be one bcz one file can be stored in only one folder
 
+-------------------------------------------------------------------------------------
+✅ What is the purpose of the jar command in Java?
+The jar command in Java is used to create, view, extract, and update JAR (Java Archive) files, which are used to bundle multiple .class files and other resources into a single compressed file.
 
+📦 What is a JAR file?
+A JAR (Java ARchive) file is like a ZIP file that contains:
 
+.class files (compiled Java code)
 
+Configuration files (like MANIFEST.MF)
 
+Resources (images, sound files, etc.)
+
+ jar command is used to move a class (or classes) from one project to another using a .jar file.
+
+💡 Goal:
+You want to reuse a class or a set of classes from Project A in Project B.
+
+-------------------------------------------------------------------------------------
 
 
 
