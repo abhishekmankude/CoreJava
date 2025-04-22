@@ -4,7 +4,8 @@ public abstract class Soap {
 
     public abstract void fragrance();
 
-    public void ingredients(){
+    public void ingredients()
+    {
         System.out.println("Running ingredients in Soap");
     }
 }

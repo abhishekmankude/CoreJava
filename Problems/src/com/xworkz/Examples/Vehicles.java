@@ -1,6 +1,6 @@
 package com.xworkz.Examples;
 
-public class Vehicles {
+public class Vehicles  extends Object{
       //coons
 
 
